@@ -1,0 +1,69 @@
+/*****************************************************************************\
+*              efs - General purpose Embedded Filesystem library              *
+*          --------------------- -----------------------------------          *
+*                                                                             *
+* Filename :  lpc3131_mci.h                                                   *
+* Description : Headerfile for lpc3131_mci.c                                  *
+*                                                                             *
+* This program is free software; you can redistribute it and/or               *
+* modify it under the terms of the GNU General Public License                 *
+* as published by the Free Software Foundation; version 2                     *
+* of the License.                                                             *
+                                                                              *
+* This program is distributed in the hope that it will be useful,             *
+* but WITHOUT ANY WARRANTY; without even the implied warranty of              *
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the               *
+* GNU General Public License for more details.                                *
+*                                                                             *
+* As a special exception, if other files instantiate templates or             *
+* use macros or inline functions from this file, or you compile this          *
+* file and link it with other works to produce a work based on this file,     *
+* this file does not by itself cause the resulting work to be covered         *
+* by the GNU General Public License. However the source code for this         *
+* file must still be made available in accordance with section (3) of         *
+* the GNU General Public License.                                             *
+*                                                                             *
+* This exception does not invalidate any other reasons why a work based       *
+* on this file might be covered by the GNU General Public License.            *
+*                                                                             *
+\*****************************************************************************/
+
+#ifndef __LPC3131_MCI_H_ 
+#define __LPC3131_MCI_H_
+
+#ifndef FALSE
+#define FALSE	0x00
+#define TRUE	0x01
+#endif
+
+#include "../debug.h"
+#include "config.h"
+
+
+/*************************************************************\
+              hwInterface
+               ----------
+* FILE* 	imagefile		File emulation of hw interface.
+* long		sectorCount		Number of sectors on the file.
+\*************************************************************/
+struct  hwInterface{
+	/*FILE 	*imageFile;*/
+	eint32  	sectorCount;
+        esint32         mcidev; 
+        esint32         DeviceType;
+};
+typedef struct hwInterface hwInterface;
+
+esint8 if_initInterface(hwInterface* file,eint8* opts);
+esint8 if_readBuf(hwInterface* file,euint32 address,euint8* buf);
+esint8 if_writeBuf(hwInterface* file,euint32 address,euint8* buf);
+esint8 if_setPos(hwInterface* file,euint32 address);
+
+esint8 sd_readSector(hwInterface *iface,euint32 address, euint8* buf, euint16 len);
+esint8 sd_writeSector(hwInterface *iface,euint32 address, euint8* buf);
+
+esint8 nand_readSector(hwInterface *iface,euint32 address, euint8* buf);
+
+esint8 if_closeSD(hwInterface* file);
+
+#endif

@@ -1,0 +1,3078 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>419268075</fileChecksum>
+  <configuration>
+    <name>Debug_SDRAM</name>
+    <outputs>
+      <file>$PROJ_DIR$\modules\usb_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\Sin_Table.o</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_i2c.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\UDA1380.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\main.o</file>
+      <file>$PROJ_DIR$\app\usb_dev_desc.h</file>
+      <file>$PROJ_DIR$\app\audio_desc.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_cgu.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.c</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_i2c.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\app\audio_class.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_cgu.o</file>
+      <file>$PROJ_DIR$\board\cstartup.s</file>
+      <file>$PROJ_DIR$\app\main.c</file>
+      <file>$PROJ_DIR$\board\vectors.s</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.c</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.c</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.c</file>
+      <file>$PROJ_DIR$\modules\drv_intc.c</file>
+      <file>$PROJ_DIR$\modules\drv_spi.c</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.c</file>
+      <file>$PROJ_DIR$\board\spinor_bootloader.c</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\app\includes.h</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_spinor.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\board\arm_comm.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\cstartup.o</file>
+      <file>$PROJ_DIR$\modules\UDA1380.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\modules\drv_spi.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_spi.pbi</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\modules\usb_hw.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\Sin_Table.pbi</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\UDA1380.pbi</file>
+      <file>$PROJ_DIR$\app\usb_hooks.h</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3131.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_intc.pbi</file>
+      <file>$PROJ_DIR$\modules\usb_buffer.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Exe\AudioDevice.out</file>
+      <file>$PROJ_DIR$\modules\usb_t9.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3130.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_spi.o</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_intc.o</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\spinor_bootloader.pbi</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\arm926ej_cp15_drv.o</file>
+      <file>$PROJ_DIR$\app\usb_cnfg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\spinor_bootloader.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\drv_spinor.o</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\Debug_SDRAM\Obj\arm926ej_cp15_drv.pbi</file>
+      <file>$PROJ_DIR$\modules\drv_intc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\UDA1380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\cstartup.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58 65 13 32 43 48 31 74 76 35 66 64 6 1 3 73 40 17 79 44 61 46 47 82 36 16 42 8 49 41 37 2 33 45 50 81 72 0 53 60 63 56 10 11 18 78 39 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\vectors.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\arm926ej_cp15_drv.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 16 48 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_cgu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 13 37 16 48 33</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 13 37 16 48 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_intc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 13 41 48 31 74 76 35 66 37 16 33</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spinor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\spinor_bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 75</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\Sin_Table.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Debug_SPINOR_Boot_SDRAM</name>
+    <outputs>
+      <file>$PROJ_DIR$\modules\usb_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\app\usb_dev_desc.h</file>
+      <file>$PROJ_DIR$\app\audio_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\app\audio_class.h</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\cstartup.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_i2c.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_spi.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\arm926ej_cp15_drv.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\spinor_bootloader.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\Sin_Table.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_i2c.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\Sin_Table.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_cgu.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\UDA1380.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Exe\AudioDevice.out</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\UDA1380.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_spi.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\spinor_bootloader.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_intc.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_spinor.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_spinor.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_intc.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\arm926ej_cp15_drv.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_SDRAM\Obj\drv_cgu.o</file>
+      <file>$PROJ_DIR$\board\cstartup.s</file>
+      <file>$PROJ_DIR$\app\main.c</file>
+      <file>$PROJ_DIR$\board\vectors.s</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.c</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.c</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.c</file>
+      <file>$PROJ_DIR$\modules\drv_intc.c</file>
+      <file>$PROJ_DIR$\modules\drv_spi.c</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.c</file>
+      <file>$PROJ_DIR$\board\spinor_bootloader.c</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\app\includes.h</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\board\arm_comm.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\modules\drv_spi.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.h</file>
+      <file>$PROJ_DIR$\modules\usb_hw.h</file>
+      <file>$PROJ_DIR$\app\usb_hooks.h</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3131.h</file>
+      <file>$PROJ_DIR$\modules\usb_buffer.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\modules\usb_t9.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3130.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\app\usb_cnfg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\modules\drv_intc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\UDA1380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\cstartup.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68 73 8 48 57 62 47 77 78 50 74 72 4 1 3 76 54 11 80 58 70 60 61 82 51 10 56 5 63 55 52 2 49 59 64 81 75 0 65 69 71 66 6 7 12 79 53 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\vectors.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\arm926ej_cp15_drv.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 10 62 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_cgu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 8 52 10 62 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_intc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spinor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\spinor_bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\Sin_Table.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Debug_SPINOR_Boot_iRAM</name>
+    <outputs>
+      <file>$PROJ_DIR$\modules\usb_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\app\usb_dev_desc.h</file>
+      <file>$PROJ_DIR$\app\audio_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\app\audio_class.h</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_spi.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_i2c.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_cgu.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\arm926ej_cp15_drv.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_intc.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\spinor_bootloader.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\UDA1380.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_cgu.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_spi.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\Sin_Table.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\cstartup.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\UDA1380.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Exe\AudioDevice.out</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_spinor.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_i2c.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\arm926ej_cp15_drv.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_intc.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\drv_spinor.pbi</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\Sin_Table.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\spinor_bootloader.o</file>
+      <file>$PROJ_DIR$\Debug_SPINOR_Boot_iRAM\Obj\main.o</file>
+      <file>$PROJ_DIR$\board\cstartup.s</file>
+      <file>$PROJ_DIR$\app\main.c</file>
+      <file>$PROJ_DIR$\board\vectors.s</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.c</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.c</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.c</file>
+      <file>$PROJ_DIR$\modules\drv_intc.c</file>
+      <file>$PROJ_DIR$\modules\drv_spi.c</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.c</file>
+      <file>$PROJ_DIR$\board\spinor_bootloader.c</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\app\includes.h</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\board\arm_comm.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\modules\drv_spi.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.h</file>
+      <file>$PROJ_DIR$\modules\usb_hw.h</file>
+      <file>$PROJ_DIR$\app\usb_hooks.h</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3131.h</file>
+      <file>$PROJ_DIR$\modules\usb_buffer.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\modules\usb_t9.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3130.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\app\usb_cnfg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\modules\drv_intc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\UDA1380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\cstartup.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68 73 8 48 57 62 47 77 78 50 74 72 4 1 3 76 54 11 80 58 70 60 61 82 51 10 56 5 63 55 52 2 49 59 64 81 75 0 65 69 71 66 6 7 12 79 53 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\vectors.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\arm926ej_cp15_drv.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 10 62 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_cgu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 8 52 10 62 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 8 52 10 62 79</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_intc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 8 55 62 47 77 78 50 74 52 10 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spinor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\spinor_bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\Sin_Table.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Debug_iRAM</name>
+    <outputs>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_cgu_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_cgu_default.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_adc10b_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_dma_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_i2s_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_i2s_clock_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_intc_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_timer_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc313x_wdt_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc31xx_vmem_driver.c</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc_arm922t_cp15_driver.c</file>
+      <file>$PROJ_DIR$\app\_crypt.c</file>
+      <file>$PROJ_DIR$\app\_boost_tpa6011.c</file>
+      <file>$PROJ_DIR$\modules\usb_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\app\usb_dev_desc.h</file>
+      <file>$PROJ_DIR$\app\audio_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\app\audio_class.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\main.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstdio</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\ioman.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\error.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\fixed.lst</file>
+      <file>$PROJ_DIR$\SDCard\lpc313x_chip.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\debug.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\timer.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\minimad.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_adc10b_driver.o</file>
+      <file>$PROJ_DIR$\libmad\bit.h</file>
+      <file>$PROJ_DIR$\_stretch\WavFile.cpp</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\partition.lst</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_i2s_clock_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\keyb.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\SoundTouch.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_i2s_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\mkfs.pbi</file>
+      <file>$PROJ_DIR$\SDCard\lpc_sdmmc.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_mci_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\arm926ej_cp15_drv.o</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\xiosbase</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\xstring</file>
+      <file>$PROJ_DIR$\modules\drv_booster.c</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\FIFOSampleBuffer.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\stream.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_intc_driver.o</file>
+      <file>$PROJ_DIR$\libmad\frame.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\_mp3.map</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\time.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_adc10b_driver.lst</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_i2s_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\layer12.lst</file>
+      <file>$PROJ_DIR$\SDCard\lpc313x_mci.h</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_dma_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\synth.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\keyb.lst</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\iosfwd</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\i2s_audio_play.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\cctype</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\exception</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_intc_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\version.pbi</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_dmac.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_dma_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_mci_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_spi.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_aic23.o</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_chip.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\fs.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc3131_mci_nand.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\FIFOSampleBuffer.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\UDA1380.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\cstartup.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\bit.o</file>
+      <file>$PROJ_DIR$\SDCard\lpc313x_sysreg.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_wdt_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_i2s_clock_driver.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\rt5E_al.a</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_spi.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$PROJ_DIR$\efsl\inc\mkfs.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\SoundTouch.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\spinor_bootloader.lst</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_cgu_switchbox.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\charger.lst</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_intc_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_nand.o</file>
+      <file>$PROJ_DIR$\libmad\synth.c</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\layer12.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\extract.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\huffman.pbi</file>
+      <file>$PROJ_DIR$\modules\drv_nand.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_adc10b_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_aic23.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_timer_driver.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\climits</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\mkfs.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\fixed.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\time.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\frame.o</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_wdt.h</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_types.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_mci_driver.o</file>
+      <file>$TOOLKIT_DIR$\lib\dl5E_tln.a</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\bit.lst</file>
+      <file>$PROJ_DIR$\efsl\inc\file.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_wd.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\ls.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\debug.o</file>
+      <file>$PROJ_DIR$\libmad\global.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\keeper.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_i2c.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\disc.o</file>
+      <file>$PROJ_DIR$\modules\tlv320aic23.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\synth_stereo.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc3131_mci_nand.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_nand.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\fat.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\minimad.o</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_adc10b_driver.h</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_timer_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_intc.o</file>
+      <file>$PROJ_DIR$\efsl\inc\partition.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\time.lst</file>
+      <file>$PROJ_DIR$\libmad\timer.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\file.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\huffman.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\nand_file.pbi</file>
+      <file>$PROJ_DIR$\libmad\synth.h</file>
+      <file>$PROJ_DIR$\libmad\sf_table.dat</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_cgu.h</file>
+      <file>$PROJ_DIR$\libmad\fixed.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_intc.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\i2s_audio_play.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\i2s_audio_play.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_booster.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\nand_w.lst</file>
+      <file>$PROJ_DIR$\modules\nand.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\keeper.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Exe\_mp3.out</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\charger.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc_arm922t_cp15_driver.o</file>
+      <file>$PROJ_DIR$\efsl\inc\debug.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\UDA1380.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Exe\_mp3.bin</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\layer3.o</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_adc10b.h</file>
+      <file>$TOOLKIT_DIR$\lib\shs_l.a</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\spinor_bootloader.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\cerrno</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_timer_driver.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\plibc.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_i2s_clock_driver.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\efsl\inc\time.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\_wd.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_cgu_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\decoder.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\WavFile.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\layer12.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_cgu_default.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_spinor.lst</file>
+      <file>$PROJ_DIR$\libmad\layer12.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_i2s_clock_driver.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc31xx_vmem_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc_io_stereo.o</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_intc.h</file>
+      <file>$PROJ_DIR$\_stretch\FIFOSampleBuffer.h</file>
+      <file>$PROJ_DIR$\_stretch\SoundTouch.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\_boost_tpa6011.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\_crypt.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\Sin_Table.lst</file>
+      <file>$PROJ_DIR$\efsl\inc\ls.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_cgu.lst</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\stdexcept</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\nand_file.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_intc_driver.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\interfaces\lpc3131_mci.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\partition.o</file>
+      <file>$PROJ_DIR$\libmad\D.dat</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_wd.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\WavFile.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\Sin_Table.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\fs.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\ui.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_i2c.pbi</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_io_stereo.h</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\string</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\stream.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\FIFOSampleBuffer.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\plibc.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\ostream</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_params.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\nand_file.lst</file>
+      <file>$PROJ_DIR$\modules\nand_file.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc3131_mci.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Exe\AudioDevice.out</file>
+      <file>$PROJ_DIR$\libmad\mad.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\minimad.pbi</file>
+      <file>$PROJ_DIR$\_audio\include\lpc31xx_vmem_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\keyb.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\dir.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Exe\_lkf.bin</file>
+      <file>$PROJ_DIR$\efsl\inc\interface.h</file>
+      <file>$PROJ_DIR$\efsl\inc\ui.h</file>
+      <file>$PROJ_DIR$\SDCard\lpc_types.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc313x_cgu_driver.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\fixed.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\layer3.lst</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_irq_fiq.h</file>
+      <file>$PROJ_DIR$\_stretch\TDStretch.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\decoder.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_spinor.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_stretch.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_lkf.pbd</file>
+      <file>$PROJ_DIR$\_stretch\RunParameters.cpp</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_crypt.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\extract.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\synth_stereo.o</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\streambuf</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\version.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\charger.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\version.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_i2s_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\efs.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\decoder.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc31xx_vmem_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_cgu_driver.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\_stretch.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\keeper.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_wdt_driver.pbi</file>
+      <file>$PROJ_DIR$\_audio\_src\lpc_io_stereo.c</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_dma_driver.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\arm926ej_cp15_drv.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_cgu.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\layer3.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\types.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\RunParameters.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_booster.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Exe\_lkf.out</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_nand.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_boost_tpa6011.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\disc.pbi</file>
+      <file>$PROJ_DIR$\libmad\qc_table.dat</file>
+      <file>$PROJ_DIR$\efsl\inc\disc.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\RunParameters.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc_io_stereo.lst</file>
+      <file>$PROJ_DIR$\libmad\layer3.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\_aic23.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_timer_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\dir.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\fat.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\efs.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\ioman.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstddef</file>
+      <file>$PROJ_DIR$\_stretch\FIFOSampleBuffer.cpp</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\plibc.o</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\istream</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_stretch.pbi</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_timer.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc31xx_vmem_driver.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\drv_i2c.lst</file>
+      <file>$PROJ_DIR$\libmad\stream.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\SoundTouch.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_dma_driver.pbi</file>
+      <file>$PROJ_DIR$\libmad\version.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\nand_w.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\timer.pbi</file>
+      <file>$PROJ_DIR$\_stretch\STTypes.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\synth.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc3131_mci_nand.lst</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\xdebug</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\synth_stereo.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\ls.o</file>
+      <file>$PROJ_DIR$\_stretch\_stretch.cpp</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_booster.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\dir.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\TDStretch.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\TDStretch.lst</file>
+      <file>$PROJ_DIR$\_stretch\TDStretch.cpp</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\bit.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_boost_tpa6011.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\ioman.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\file.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\WavFile.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\fs.pbi</file>
+      <file>$PROJ_DIR$\libmad\decoder.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\clocale</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\Sin_Table.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\efs.h</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_arm922t_arch.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\lpc_arm922t_cp15_driver.lst</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\xstddef</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\fat.lst</file>
+      <file>$PROJ_DIR$\efsl\inc\plibc.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\AudioDevice.pbd</file>
+      <file>$PROJ_DIR$\_stretch\SoundTouch.cpp</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_i2s_driver.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\frame.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_spi.pbi</file>
+      <file>$PROJ_DIR$\_stretch\RunParameters.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc_io_stereo.pbi</file>
+      <file>$PROJ_DIR$\efsl\inc\interfaces\lpc3131_mci_nand.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\huffman.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\mkfs.lst</file>
+      <file>$TOOLKIT_DIR$\lib\m5E_tl.a</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_wdt_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\main.o</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\ios</file>
+      <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+      <file>$PROJ_DIR$\libmad\imdct_s.dat</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_arm922t_cp15_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\stream.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\dir.pbi</file>
+      <file>$PROJ_DIR$\_stretch\_stretch.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\TDStretch.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlpp5E_al_ne.a</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\RunParameters.lst</file>
+      <file>$PROJ_DIR$\efsl\inc\ioman.h</file>
+      <file>$PROJ_DIR$\SDCard\lpc313x_mci_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\extract.lst</file>
+      <file>$PROJ_DIR$\libmad\rq_table.dat</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_intc.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstring</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\UDA1380.lst</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_i2s.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\ls.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\timer.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\disc.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstdlib</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Exe\_lkf..out</file>
+      <file>$PROJ_DIR$\efsl\conf\config.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_spinor.o</file>
+      <file>$PROJ_DIR$\_audio\i2s_audio\i2s_audio_play.c</file>
+      <file>$PROJ_DIR$\_audio\include\lpc_arm_arch.h</file>
+      <file>$PROJ_DIR$\efsl\inc\extract.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\spinor_bootloader.o</file>
+      <file>$PROJ_DIR$\libmad\huffman.h</file>
+      <file>$TOOLKIT_DIR$\inc\ecpp\xlocnum</file>
+      <file>$PROJ_DIR$\efsl\inc\fs.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_cgu_default.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\file.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\efs.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\ui.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_mp3.pbd</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\fat.o</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\ui.pbi</file>
+      <file>$PROJ_DIR$\efsl\src\interfaces\lpc3131_mci.c</file>
+      <file>$PROJ_DIR$\Debug_iRAM\List\arm926ej_cp15_drv.lst</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\partition.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc_arm922t_cp15_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\debug.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\nand_w.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_wdt_driver.o</file>
+      <file>$PROJ_DIR$\_stretch\WavFile.h</file>
+      <file>$PROJ_DIR$\config\LPC313x_iRAM.icf</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\_crypt.o</file>
+      <file>$PROJ_DIR$\libmad\midmad.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\lpc313x_cgu_default.pbi</file>
+      <file>$PROJ_DIR$\_audio\include\lpc313x_cgu_driver.h</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\drv_cgu.pbi</file>
+      <file>$PROJ_DIR$\Debug_iRAM\Obj\frame.pbi</file>
+      <file>$PROJ_DIR$\_stretch\FIFOSamplePipe.h</file>
+      <file>$PROJ_DIR$\app\drv_booster.c</file>
+      <file>$PROJ_DIR$\app\_wd.c</file>
+      <file>$PROJ_DIR$\app\charger.c</file>
+      <file>$PROJ_DIR$\app\keeper.c</file>
+      <file>$PROJ_DIR$\_audio\i2s_audio\lpc_io_stereo.c</file>
+      <file>$PROJ_DIR$\board\cstartup.s</file>
+      <file>$PROJ_DIR$\efsl\src\dir.c</file>
+      <file>$PROJ_DIR$\app\main.c</file>
+      <file>$PROJ_DIR$\board\vectors.s</file>
+      <file>$PROJ_DIR$\efsl\src\debug.c</file>
+      <file>$PROJ_DIR$\efsl\src\disc.c</file>
+      <file>$PROJ_DIR$\efsl\src\efs.c</file>
+      <file>$PROJ_DIR$\efsl\src\extract.c</file>
+      <file>$PROJ_DIR$\efsl\src\fat.c</file>
+      <file>$PROJ_DIR$\efsl\src\file.c</file>
+      <file>$PROJ_DIR$\efsl\src\fs.c</file>
+      <file>$PROJ_DIR$\efsl\src\ioman.c</file>
+      <file>$PROJ_DIR$\efsl\src\mkfs.c</file>
+      <file>$PROJ_DIR$\efsl\src\interfaces\lpc3131_mci_nand.c</file>
+      <file>$PROJ_DIR$\efsl\src\ls.c</file>
+      <file>$PROJ_DIR$\efsl\src\partition.c</file>
+      <file>$PROJ_DIR$\efsl\src\plibc.c</file>
+      <file>$PROJ_DIR$\efsl\src\time.c</file>
+      <file>$PROJ_DIR$\efsl\src\ui.c</file>
+      <file>$PROJ_DIR$\libmad\bit.c</file>
+      <file>$PROJ_DIR$\libmad\decoder.c</file>
+      <file>$PROJ_DIR$\libmad\fixed.c</file>
+      <file>$PROJ_DIR$\libmad\huffman.c</file>
+      <file>$PROJ_DIR$\libmad\frame.c</file>
+      <file>$PROJ_DIR$\libmad\layer12.c</file>
+      <file>$PROJ_DIR$\libmad\layer3.c</file>
+      <file>$PROJ_DIR$\libmad\minimad.c</file>
+      <file>$PROJ_DIR$\libmad\stream.c</file>
+      <file>$PROJ_DIR$\libmad\synth_stereo.c</file>
+      <file>$PROJ_DIR$\libmad\timer.c</file>
+      <file>$PROJ_DIR$\libmad\version.c</file>
+      <file>$PROJ_DIR$\board\arm926ej_cp15_drv.c</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.c</file>
+      <file>$PROJ_DIR$\modules\_aic23.c</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.c</file>
+      <file>$PROJ_DIR$\modules\drv_intc.c</file>
+      <file>$PROJ_DIR$\modules\drv_nand.c</file>
+      <file>$PROJ_DIR$\modules\drv_spi.c</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.c</file>
+      <file>$PROJ_DIR$\modules\keyb.c</file>
+      <file>$PROJ_DIR$\modules\nand_file.c</file>
+      <file>$PROJ_DIR$\modules\nand_w.c</file>
+      <file>$PROJ_DIR$\board\spinor_bootloader.c</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\SDCard\lpc313x_mci_driver.c</file>
+      <file>$PROJ_DIR$\readme.txt</file>
+      <file>$PROJ_DIR$\app\includes.h</file>
+      <file>$PROJ_DIR$\modules\drv_cgu.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\board\arm_comm.h</file>
+      <file>$PROJ_DIR$\modules\UDA1380.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\modules\drv_spi.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\modules\drv_spinor.h</file>
+      <file>$PROJ_DIR$\modules\usb_hw.h</file>
+      <file>$PROJ_DIR$\app\usb_hooks.h</file>
+      <file>$PROJ_DIR$\modules\Sin_Table.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3131.h</file>
+      <file>$PROJ_DIR$\modules\usb_buffer.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\modules\usb_t9.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc3130.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\app\usb_cnfg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\modules\drv_i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\modules\drv_intc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 148 55</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_cgu_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 216 238</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 165</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 372 138 109 224 442 425 457 162 458 430 454 75 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 372 138 109 224 442 425 457 458 430 454 75 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_cgu_default.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 169 353</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 371</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 372 138 109 224 442 425 457 162 458 430 454 75 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 372 138 109 224 442 425 457 458 430 454 75 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_adc10b_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 127 155 109 224 442 425 457 162 458 430 454 75 202 93 175 372 138 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127 155 109 224 442 425 457 458 430 454 75 202 93 175 372 138 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_dma_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71 243</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 276</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61 70 109 224 442 425 457 162 458 430 454 75 93 175 372 138 91 323 302</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61 70 109 224 442 425 457 458 430 454 75 93 175 372 138 91 323 302</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_i2s_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 309</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 234</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 337 109 224 442 425 457 162 458 430 454 75 93 175</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58 337 109 224 442 425 457 458 430 454 75 93 175</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_i2s_clock_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 161 172</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 109 224 442 425 457 162 458 430 454 372 138 75 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 109 224 442 425 457 458 430 454 372 138 75 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_intc_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68 53</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 186</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 346 323 109 224 442 425 457 162 458 430 454 302 372 138 75 91 93 175</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 346 323 109 224 442 425 457 458 430 454 302 372 138 75 91 93 175</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_timer_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 261</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 128 271 109 224 442 425 457 162 458 430 454 75 372 138 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128 271 109 224 442 425 457 458 430 454 75 372 138 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc313x_wdt_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 83 366</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 241</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 318 108 109 224 442 425 457 162 458 430 454 75 372 138 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 318 108 109 224 442 425 457 458 430 454 75 372 138 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc31xx_vmem_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 173 272</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 237</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 209 109 224 442 425 457 162 458 430 454 323 302 14 452 16 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 209 109 224 442 425 457 458 430 454 323 302 14 452 16 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc_arm922t_cp15_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 303 150</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 363</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 323 109 224 442 425 457 162 458 430 454 302 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 323 109 224 442 425 457 458 430 454 302 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\_crypt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 180 369</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 227</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146 219</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146 219</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\_boost_tpa6011.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 178 253</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 293</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\UDA1380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 336 152</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21 432 23 442 459 433</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21 432 23 442 459 433</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_stretch\WavFile.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 296 167</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 437 442 425 457 162 458 430 454 452 17 184 67 304 266 143 341 438 49 64 27 335 14 16 197 269 201 320 351 158 87 103 431 299 321 245 230 48 66 456 434 24 460 450 440 441 283 435 367</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 437 442 425 457 458 430 454 452 17 184 67 304 266 143 341 438 49 64 27 335 14 16 197 269 201 320 351 158 87 103 431 299 321 245 230 48 66 456 434 24 460 450 440 441 283 435 367</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_booster.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 144 287</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 250</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\synth.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 281</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 139 54 132 274 37 136 196 14 442 425 457 162 458 430 454 452 16 189</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 139 54 132 274 37 136 196 14 442 425 457 458 430 454 452 16 189</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Exe\_mp3.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 368 192 74 253 369 190 47 81 232 80 116 236 288 120 287 246 119 129 94 73 344 264 97 358 354 217 107 193 134 294 147 41 96 154 77 36 353 238 243 172 309 53 110 159 366 272 150 174 285 319 126 104 185 278 188 268 349 324 229 106 339 356 348 231 156 85 317 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Exe\AudioDevice.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 212</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 368 199 249 192 89 289 167 74 253 369 223 190 47 81 232 80 116 236 288 120 287 246 119 129 94 73 344 264 97 358 354 217 107 193 134 294 147 41 96 154 77 353 238 243 172 309 53 110 159 272 150 174 285 319 126 104 188 268 349 324 229 106 339 356 348 231 156 85 328 317 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Obj\_lkf.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 51 257 300 42 327 191 101 293 227 270 114 244 292 149 364 166 325 254 250 373 195 334 124 311 222 235 228 263 295 105 374 297 98 28 118 210 168 247 123 371 165 276 84 234 186 72 261 237 363 313 115 30 208 44 362 200 157 198 122 56 279 359 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_stretch\RunParameters.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 329 249</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 257</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184 67 304 442 425 457 162 458 430 454 266 143 452 341 438 49 64 27 437 17 335 14 16 197 269 201 320 351 158 87 103 431 299 321 245 230 48 66 456 434 24 460 450 440 441 283 312 280</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 184 67 304 442 425 457 458 430 454 266 143 452 341 438 49 64 27 437 17 335 14 16 197 269 201 320 351 158 87 103 431 299 321 245 230 48 66 456 434 24 460 450 440 441 283 312 280</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\_src\lpc_io_stereo.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 313</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 442 425 457 458 430 454 452 16 196 428 437 17 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 187 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Exe\_lkf.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 212</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 368 199 249 192 89 289 167 74 253 369 223 190 47 81 232 80 116 236 288 120 287 246 119 129 94 73 344 264 97 358 354 217 107 193 134 294 147 41 96 154 77 353 238 243 172 309 53 110 159 272 150 174 285 319 126 104 188 268 349 324 229 106 339 356 348 231 156 85 328 317 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_stretch\FIFOSampleBuffer.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 199</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 438 442 425 457 162 458 430 454 452 437 17 14 16 435 184 67 304 266 143 341 49 64 27 335 176 375 280</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 438 442 425 457 458 430 454 452 437 17 14 16 435 184 67 304 266 143 341 49 64 27 335 176 375 280</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_stretch\_stretch.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 239 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 326 437 442 425 457 162 458 430 454 452 17 312 280 197 269 201 320 351 158 87 103 431 299 321 245 27 341 438 230 48 66 456 434 24 460 450 440 441 184 67 304 266 143 49 64 335 14 16 283 367 177 375 435</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 326 437 442 425 457 458 430 454 452 17 312 280 197 269 201 320 351 158 87 103 431 299 321 245 27 341 438 230 48 66 456 434 24 460 450 440 441 184 67 304 266 143 49 64 335 14 16 283 367 177 375 435</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_stretch\TDStretch.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 290 289</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 327</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 442 425 457 162 458 430 454 452 16 438 437 17 431 436 18 443 435 280 220 375 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 442 425 457 458 430 454 452 16 438 437 17 431 436 18 443 435 280 220 375 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Obj\AudioDevice.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 51 257 300 42 327 191 101 293 227 270 114 244 292 149 364 166 325 254 250 373 195 334 124 311 222 235 228 263 295 105 374 297 98 28 118 210 168 247 123 371 165 276 84 234 186 72 261 237 363 313 115 30 208 44 362 200 157 198 122 56 279 359 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_stretch\SoundTouch.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 275 89</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 435 442 425 457 162 458 430 454 438 452 14 16 436 18 443 184 67 304 266 143 341 49 64 27 437 17 335 177 375 280 220 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 435 442 425 457 458 430 454 438 452 14 16 436 18 443 184 67 304 266 143 341 49 64 27 437 17 335 177 375 280 220 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Exe\_lkf..out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 212</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\i2s_audio\i2s_audio_play.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109 224 442 425 457 162 458 430 454 219 23 61 70 75 40 209 93 175 58 337 301 248 343 213 187 151 256 29 330 306 347 130 352 163 113 211 125 214</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109 224 442 425 457 458 430 454 219 23 61 70 75 40 209 58 337 93 175 301 248 343 213 187 151 256 29 330 306 347 130 352 163 113 211 125 214</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug_iRAM\Obj\_mp3.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 300 101 293 227 114 244 292 149 364 166 325 254 250 373 195 334 124 311 222 235 228 263 295 105 374 297 98 28 118 210 168 247 123 100 371 165 276 84 234 186 72 261 241 237 363 313 115 30 208 44 135 365 362 200 157 198 122 56 279 359 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\interfaces\lpc3131_mci.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 205</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\drv_booster.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 144 287</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 250</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\_wd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164 190</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 372 138 109 224 442 425 457 162 458 430 454 75 91 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 372 138 109 224 442 425 457 458 430 454 75 91 108</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\charger.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 232</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\keeper.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 240 147</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\_audio\i2s_audio\lpc_io_stereo.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 258 174</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 313</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 442 425 457 162 458 430 454 452 16 196 61 70 109 224 75 40 209 372 138 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 442 425 457 458 430 454 452 16 196 61 70 109 224 75 40 209 372 138 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\cstartup.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\dir.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 262 288</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 325</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 211 343 29 213 248 314 151 125 113 163 352 130 256 330 306 347</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 211 343 29 213 248 314 151 125 113 163 352 130 256 330 306 347</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 319</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 448 453 21 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146 196 370 326 447</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 448 453 21 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146 196 370 326 447</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\vectors.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 348</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\debug.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33 116</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 364</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 151 248 343</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151 248 343</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\disc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 340 120</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 254</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 256 343 29 213 248 314 151 330 306 347</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256 343 29 213 248 314 151 330 306 347</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\efs.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 355 264</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 235</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\extract.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 332 97</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 228</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 347 343 256 29 213 248 314 151 330 306</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 347 343 256 29 213 248 314 151 330 306</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\fat.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 305 358</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 263</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 352 343 29 213 248 314 151 130 256 330 306 347 163</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352 343 29 213 248 314 151 130 256 330 306 347 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\file.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 133 354</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 295</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 113 343 29 213 248 314 151 163 352 130 256 330 306 347 211 125 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 343 29 213 248 314 151 163 352 130 256 330 306 347 211 125 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\fs.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 76 193</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 297</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 352 343 29 213 248 314 151 130 256 330 306 347 163 125 113 211</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352 343 29 213 248 314 151 130 256 330 306 347 163 125 113 211</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\ioman.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 265 294</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 330 213 248 343 314 151 29 306</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 330 213 248 343 314 151 29 306</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\mkfs.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 316 104</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 88 130 343 29 213 248 314 151 256 330 306 347</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 130 343 29 213 248 314 151 256 330 306 347</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\interfaces\lpc3131_mci_nand.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 282 77</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 437 442 425 457 162 458 430 454 452 17 331 60 215 32 45 99 453 21 432 23 314 151 248 343 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 437 442 425 457 458 430 454 452 17 331 60 215 32 45 99 453 21 432 23 314 151 248 343 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\ls.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 338 285</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 182 343 352 29 213 248 314 151 130 256 330 306 347 163 211 125 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 182 343 352 29 213 248 314 151 130 256 330 306 347 163 211 125 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\partition.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39 188</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 362</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 130 343 29 213 248 314 151 256 330 306 347</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130 343 29 213 248 314 151 256 330 306 347</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\plibc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 160 268</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 200</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 306 151 248 343</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 306 151 248 343</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\time.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 131 106</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 163 248 343</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 248 343</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\efsl\src\ui.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194 356</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 359</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 214 352 343 29 213 248 314 151 130 256 330 306 347 163 125 113 211</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 214 352 343 29 213 248 314 151 130 256 330 306 347 163 125 113 211</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\bit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 112 81</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 292</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\decoder.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 221 236</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 438 442 425 457 162 458 430 454 452 274 37 54 139 132 136 196 298</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 438 442 425 457 458 430 454 452 274 37 54 139 132 136 196 298</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\fixed.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31 217</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 139</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 139</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\huffman.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 315 134</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 350</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 350</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\frame.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 310 107</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 374</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 438 442 425 457 162 458 430 454 452 37 274 54 139 132 171 259</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 438 442 425 457 458 430 454 452 37 274 54 139 132 171 259</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\layer12.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 168</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 139 37 274 54 132 171 137 255</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 139 37 274 54 132 171 137 255</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\layer3.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 218 154</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 247</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 438 442 425 457 162 458 430 454 452 14 16 139 37 274 54 132 350 259 151 248 343 333 322</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 438 442 425 457 458 430 454 452 14 16 139 37 274 54 132 350 259 151 248 343 333 322</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\minimad.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 126</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 208</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 437 442 425 457 162 458 430 454 452 17 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 14 16 428 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 88 179 224 61 70 109 75 93 175 127 155 202 204 146 207 196 370</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 437 442 425 457 458 430 454 452 17 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 14 16 428 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 88 179 224 61 70 109 75 93 175 127 155 202 204 146 207 196 370</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\stream.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 324</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 198</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 438 442 425 457 162 458 430 454 452 37 274</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 438 442 425 457 458 430 454 452 37 274</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\synth_stereo.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 284 229</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 139 54 132 274 37 136 196 14 442 425 457 162 458 430 454 452 16 189</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 139 54 132 274 37 136 196 14 442 425 457 458 430 454 452 16 189</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\timer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34 339</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 279</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 437 442 425 457 162 458 430 454 452 17 132</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 437 442 425 457 458 430 454 452 17 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libmad\version.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 233 231</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117 277</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 277</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\arm926ej_cp15_drv.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 361 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 244</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 23 442 432</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 23 442 432</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_cgu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183 246</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 373</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21 432 23 442 429</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21 432 23 442 429</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\_aic23.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 260 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21 432 23 442 459 121 428 437 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 436 18 443 435 15 429 439 444 461 455 13 445 449 451 446 19 20 25 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21 432 23 442 459 121 428 437 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 436 18 443 435 15 429 439 444 461 455 13 445 449 451 446 19 20 25 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 273 119</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 195</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21 432 23 442 459</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21 432 23 442 459</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_intc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140 129</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 334</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21 435 442 425 457 162 458 430 454 432 23 429</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21 435 442 425 457 458 430 454 432 23 429</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_nand.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 252 94</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 429 453 21 432 23 442 99 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 429 453 21 432 23 442 99 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86 73</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 311</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 439 453 21 432 23 442</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 439 453 21 432 23 442</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_spinor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 170 344</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 222</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 439 453 21 432 23 442 429 444</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 439 453 21 432 23 442 429 444</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\keyb.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 210</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 128 271 109 224 442 425 457 162 458 430 454 75 428 437 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 61 70 93 175 127 155 202 204 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128 271 109 224 442 425 457 458 430 454 75 428 437 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 61 70 93 175 127 155 202 204 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\nand_file.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 203 185</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 204 248 343 146 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204 248 343 146 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 453 21 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\nand_w.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145 278</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 365</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 448 453 21 428 437 442 425 457 162 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146 196</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 448 453 21 428 437 442 425 457 458 430 454 452 17 14 16 456 434 24 460 438 450 440 441 462 431 23 436 18 443 435 432 15 429 439 444 461 455 13 445 449 451 446 19 20 25 459 433 301 248 343 213 314 151 256 29 330 306 347 130 352 163 113 211 125 214 182 88 179 224 61 70 109 75 93 175 127 155 202 204 146 196</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\spinor_bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 349</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 453 21 429 432 23 442 439 444</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 453 21 429 432 23 442 439 444</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\Sin_Table.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 181 192</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 300</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 447</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 447</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SDCard\lpc313x_mci_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46 110</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 437 442 425 457 162 458 430 454 452 17 14 16 45 82 215 32 429 453 21 432 23 331 60</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 437 442 425 457 458 430 454 452 17 14 16 45 82 215 32 429 453 21 432 23 331 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\libmad\synth.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

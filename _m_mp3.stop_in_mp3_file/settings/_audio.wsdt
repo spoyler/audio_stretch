@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>_audio/Debug iRAM</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>306</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>960</ColumnWidth1><ColumnWidth2>545</ColumnWidth2><ColumnWidth3>93</ColumnWidth3></Build>
+      <Debug-Log>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1861</ColumnWidth1>
+      </Debug-Log>
+      <TerminalIO/>
+      <Find-in-Files>
+        <ColumnWidth0>664</ColumnWidth0>
+        <ColumnWidth1>94</ColumnWidth1>
+        <ColumnWidth2>1138</ColumnWidth2>
+      </Find-in-Files>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-16460-22292</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>_audio</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-11755-22380</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-18844-22452</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-3894-3269</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>3139</SelStart><SelEnd>3144</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\_i2c.c</Filename><XPos>0</XPos><YPos>339</YPos><SelStart>9919</SelStart><SelEnd>9919</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\_aic23.c</Filename><XPos>0</XPos><YPos>316</YPos><SelStart>7595</SelStart><SelEnd>7609</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\lpc_io_stereo.c</Filename><XPos>0</XPos><YPos>458</YPos><SelStart>10628</SelStart><SelEnd>10628</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\libmad\minimad.c</Filename><XPos>0</XPos><YPos>1005</YPos><SelStart>24653</SelStart><SelEnd>24653</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\_bsp\include\lpc32xx_dma_driver.h</Filename><XPos>0</XPos><YPos>44</YPos><SelStart>2348</SelStart><SelEnd>2348</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\inc\nxp\iolpc3250.h</Filename><XPos>0</XPos><YPos>3640</YPos><SelStart>99505</SelStart><SelEnd>99505</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\lpc\include\lpc_types.h</Filename><XPos>0</XPos><YPos>138</YPos><SelStart>4923</SelStart><SelEnd>4923</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01177320><key>iaridepm.enu1</key></Toolbar-01177320></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>555</Bottom><Right>380</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>202</yscreen><sizeHorzCX>104167</sizeHorzCX><sizeHorzCY>200397</sizeHorzCY><sizeVertCX>198958</sizeVertCX><sizeVertCY>552579</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>408</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>410</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>406746</sizeHorzCY><sizeVertCX>104167</sizeVertCX><sizeVertCY>200397</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

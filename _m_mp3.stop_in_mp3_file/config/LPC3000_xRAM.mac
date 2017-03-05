@@ -1,0 +1,89 @@
+setup()
+{
+__var Reg;
+  // Halt CPU immediately after reset
+  __hwReset(0);
+    // Disable WDT
+  __writeMemory32(0x00000000,0x400040BC,"Memory");   // TIMCLK_CTRL = 0
+  // Init clocks
+  __writeMemory32(0x50<<2,0x40004050, "Memory");     // SYSCLK_CTRL - Switch to Main oscillator  
+  // Set H divider and Per divider
+  __writeMemory32(0x0000003D, 0x40004040, "Memory"); // PERIPH_CLK = PLL_CLK*1/16; 
+                                                     // HCLK = PLL_CLK*1/2;
+  // Set HPLL
+  __writeMemory32(0x0001601E, 0x40004058, "Memory"); // HCLKPLL_CTRL OSC * 16 = 208MHz  
+  do
+  {
+    Reg = __readMemory32(0x40004058, "Memory") & 1;  // HCLKPLL_CTRL_bit.LOOK
+  }while(!Reg);
+  
+  // Switch to PLL output and out form the self-refresh of the SDRAM
+  Reg = __readMemory32(0x40004044,"Memory");         // PWR_CTRL
+  Reg &= ~((1 << 9) | (1 << 8));
+  Reg |=   (1 << 2);
+  __writeMemory32(Reg, 0x40004044, "Memory");
+  Reg |=   (1 << 8);
+  __writeMemory32(Reg, 0x40004044, "Memory");
+  Reg &=  ~(1 << 8);
+  __writeMemory32(Reg, 0x40004044, "Memory");
+  
+  // Disable 397 PLL
+  __writeMemory32(0x00000002, 0x40004048, "Memory"); // PLL397_CTRL disable
+
+  // MT48H16M16LF SDR SDRAM timings set
+  __writeMemory32(0x00FFFFFF, 0x40028134, "Memory"); // P1_MUX_CLR = 0x00FFFFFF;
+  __writeMemory32(0x00000008, 0x4002802C, "Memory"); // EMC_D_SEL = 0;
+                                                     // SDRAM_D[31:19] are connected to 
+                                                     // the SDRAM controller.
+  // Init SDRAM Controller
+  __writeMemory32(0x00000001, 0x31080000, "Memory"); // EMCControl - SDRAM Controller Enable
+  __writeMemory32(0x00000000, 0x31080008, "Memory"); // EMCConfig - liitle endian
+  __writeMemory32(0x0001C000, 0x40004068, "Memory"); // SDRAMCLK_CTRL  HCLKDELAY = 1.75ns
+  __writeMemory32(0x00000011, 0x31080028, "Memory"); // EMCDynamicReadConfig
+
+  __writeMemory32(0x00000000, 0x31080400, "Memory"); // EMCAHBControl0
+  __writeMemory32(0x00000000, 0x31080440, "Memory"); // EMCAHBControl2
+  __writeMemory32(0x00000000, 0x31080460, "Memory"); // EMCAHBControl3
+  __writeMemory32(0x00000000, 0x31080480, "Memory"); // EMCAHBControl4
+
+  __writeMemory32(0x00000001, 0x31080030, "Memory"); // EMCDynamictRP = 1    -  19ns
+  __writeMemory32(0x00000004, 0x31080034, "Memory"); // EMCDynamictRAS = 4   -  48ns
+  __writeMemory32(0x00000008, 0x31080038, "Memory"); // EMCDynamictSREX = 8  -  80ns
+  __writeMemory32(0x00000001, 0x31080044, "Memory"); // EMCDynamictWR = 1    -  15ns
+  __writeMemory32(0x00000008, 0x31080048, "Memory"); // EMCDynamictRC = 8    -  80ns
+  __writeMemory32(0x00000008, 0x3108004C, "Memory"); // EMCDynamictRFC = 8   -  80ns
+  __writeMemory32(0x00000008, 0x31080050, "Memory"); // EMCDynamictXSR = 8   -  80ns
+  __writeMemory32(0x00000001, 0x31080054, "Memory"); // EMCDynamictRRD = 1   -  16ns
+  __writeMemory32(0x00000001, 0x31080058, "Memory"); // EMCDynamictMRD = 1   -  2ckl
+  __writeMemory32(0x00000000, 0x3108005C, "Memory"); // EMCDynamicCDLR = 0   -  1ckl
+  __writeMemory32(0x00004680, 0x31080100, "Memory"); // EMCDynamicConfig0
+                                                     // Standard SDRAM
+                                                     // 256Mb (16Mx16), 4 banks, row length = 13, column length = 9
+  __writeMemory32(0x00000203, 0x31080104, "Memory"); // EMCDynamicRasCas0
+
+                                                     // CAS = 4 - two clock cycles
+                                                     // RAS = 3 
+
+  __writeMemory32(0x00000193, 0x31080020, "Memory"); // EMCDynamicControl = 0x193;        // NOP
+  __delay(1);
+  __writeMemory32(0x00000001, 0x31080024, "Memory"); // EMCDynamicRefresh = 1;
+  __writeMemory32(0x00000113, 0x31080020, "Memory"); // EMCDynamicControl_bit.I = 2;     // PRECHARGE ALL
+  __delay(1);
+  __writeMemory32(0x00000013, 0x31080020, "Memory"); // EMCDynamicControl_bit.I = 0;     // AUTO REFRESH
+  __delay(1);
+  __writeMemory32(0x00000032, 0x31080024, "Memory"); // EMCDynamicRefresh = (64ms/8192) * 104MHz / 16 = 50
+  __writeMemory32(0x00000093, 0x31080020, "Memory"); // EMCDynamicControl_bit.I = 1;     // SDRAM MODE
+
+  // Burst Length, CAS, Burst Type - Sequential
+  __readMemory32(0x80000000|(0x220UL<<13), "Memory");
+  __writeMemory32(0x00000013, 0x31080020, "Memory"); // EMCDynamicControl_bit.I = 0;     // OPERATION
+
+  // Map IRAM at 0x00000000
+  __writeMemory32(0x00000001, 0x40004014, "Memory"); // BOOT_MAP = 1;
+
+}
+
+execUserPreload()
+{
+  setup();
+}

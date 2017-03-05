@@ -1,0 +1,36 @@
+execUserPreload()
+{
+__var Reg;
+  // Halt CPU immediately after reset
+  __hwReset(0);
+    // Disable WDT
+  __writeMemory32(0x00000000,0x400040BC,"Memory");
+
+  // Init clocks
+  __writeMemory32(0x50<<2,0x40004050, "Memory");     // SYSCLK_CTRL - Switch to Main oscillator  
+  // Set H divider and Per divider
+  __writeMemory32(0x0000003D, 0x40004040, "Memory"); // PERIPH_CLK = PLL_CLK*1/16; 
+                                                     // HCLK = PLL_CLK*1/2;
+  // Set HPLL
+  __writeMemory32(0x0001601E, 0x40004058, "Memory"); // HCLKPLL_CTRL OSC * 16 = 208MHz  
+  do
+  {
+    Reg = __readMemory32(0x40004058, "Memory") & 1;  // HCLKPLL_CTRL_bit.LOOK
+  }while(!Reg);
+  
+  // Switch to PLL output and out form the self-refresh of the SDRAM
+  Reg = __readMemory32(0x40004044,"Memory");         // PWR_CTRL
+  Reg &= ~((1 << 9) | (1 << 8));
+  Reg |=   (1 << 2);
+  __writeMemory32(Reg, 0x40004044, "Memory");
+  Reg |=   (1 << 8);
+  __writeMemory32(Reg, 0x40004044, "Memory");
+  Reg &=  ~(1 << 8);
+  __writeMemory32(Reg, 0x40004044, "Memory");
+  
+  // Disable 397 PLL
+  __writeMemory32(0x00000002, 0x40004048, "Memory"); // PLL397_CTRL disable
+
+  // Map IRAM at 0x00000000
+  __writeMemory32(0x00000001, 0x40004014, "Memory"); // BOOT_MAP = 1;
+}

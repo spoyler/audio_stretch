@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>GettingStarted/Debug_SDRAM</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>243</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>724</ColumnWidth1><ColumnWidth2>193</ColumnWidth2><ColumnWidth3>48</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Find-in-Files><ColumnWidth0>536</ColumnWidth0><ColumnWidth1>0</ColumnWidth1><ColumnWidth2>727</ColumnWidth2></Find-in-Files><Debug-Log><ColumnWidth0>19</ColumnWidth0><ColumnWidth1>1221</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-29382-15995</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>GettingStarted</ExpandedNode><ExpandedNode>GettingStarted/MMU</ExpandedNode><ExpandedNode>GettingStarted/USB</ExpandedNode><ExpandedNode>GettingStarted/USB/Class</ExpandedNode><ExpandedNode>GettingStarted/USB/Config</ExpandedNode><ExpandedNode>GettingStarted/USB/Core</ExpandedNode><ExpandedNode>GettingStarted/USB/HW</ExpandedNode><ExpandedNode>GettingStarted/app</ExpandedNode><ExpandedNode>GettingStarted/board</ExpandedNode><ExpandedNode>GettingStarted/modules</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-5629-31997</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-269-15234</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-16336-3820</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\app\main.c</Filename><XPos>0</XPos><YPos>185</YPos><SelStart>7074</SelStart><SelEnd>7074</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\modules\drv_cgu.c</Filename><XPos>0</XPos><YPos>245</YPos><SelStart>10417</SelStart><SelEnd>10417</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00eefae8><key>iaridepm.enu1</key></Toolbar-00eefae8></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>681</Bottom><Right>317</Right><x>-2</x><y>-2</y><xscreen>271</xscreen><yscreen>266</yscreen><sizeHorzCX>211719</sizeHorzCX><sizeHorzCY>289130</sizeHorzCY><sizeVertCX>249219</sizeVertCX><sizeVertCY>742391</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>194</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>196</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>213043</sizeHorzCY><sizeVertCX>211719</sizeVertCX><sizeVertCY>289130</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
