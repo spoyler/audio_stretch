@@ -122,7 +122,7 @@ TraceShowTime=0
 TraceShowTimeFreq=1000000
 CStepIntDis=_ 0
 [DebugChecksum]
-Checksum=2019905449
+Checksum=1155332859
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -130,22 +130,6 @@ StopOnThrow=_ 0
 ShowArgs=0
 [Disassembly]
 MixedMode=1
-[InterruptLog]
-LogEnabled=0
-SumEnabled=0
-GraphEnabled=0
-ShowTimeLog=1
-ShowTimeSum=1
-SumSortOrder=0
-[Interrupts]
-Enabled=1
-[MemoryMap]
-Enabled=0
-Base=0
-UseAuto=0
-TypeViolation=1
-UnspecRange=1
-ActionState=1
 [struct_types]
 Fmt0=PartitionField-numSectors	3	0
 Fmt1=SD_CMDRESP_T-cmd_status	4	0
@@ -171,16 +155,32 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Trace1]
-Enabled=0
-ShowSource=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
 Enabled=0
-Mode=1
+Mode=0
 Graph=0
 Symbiont=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]

@@ -87,7 +87,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>6.21.1.52845</state>
+          <state>6.30.1.53141</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -317,7 +317,7 @@
         </option>
         <option>
           <name>IInterwork2</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IProcessorMode2</name>
@@ -360,7 +360,7 @@
         </option>
         <option>
           <name>IccLang</name>
-          <state>0</state>
+          <state>2</state>
         </option>
         <option>
           <name>IccCDialect</name>
@@ -368,7 +368,7 @@
         </option>
         <option>
           <name>IccAllowVLA</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IccCppDialect</name>
@@ -376,15 +376,15 @@
         </option>
         <option>
           <name>IccExceptions</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccRTTI</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccStaticDestr</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccCppInlineSemantics</name>
@@ -617,7 +617,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -878,6 +878,18 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -1511,7 +1523,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1772,6 +1784,18 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -2405,7 +2429,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -2667,6 +2691,18 @@
           <name>IlinkOptForceVfe</name>
           <state>0</state>
         </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -2781,7 +2817,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state></state>
+          <state>6.30.1.53141</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -2793,7 +2829,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state></state>
+          <state>Default	None</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -2827,12 +2863,12 @@
         </option>
         <option>
           <name>RTConfigPath2</name>
-          <state></state>
+          <state>$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h</state>
         </option>
         <option>
           <name>GFPUCoreSlave</name>
           <version>19</version>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>GBECoreSlave</name>
@@ -2971,7 +3007,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.o</state>
         </option>
         <option>
           <name>CCLibConfigHeader</name>
@@ -3016,7 +3052,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>1</state>
+          <state>3</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -3212,7 +3248,7 @@
         </option>
         <option>
           <name>AOutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.o</state>
         </option>
         <option>
           <name>AMultibyteSupport</name>
@@ -3299,7 +3335,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -3316,7 +3352,7 @@
         </option>
         <option>
           <name>IlinkOutputFile</name>
-          <state>###Unitialized###</state>
+          <state>_audio.out</state>
         </option>
         <option>
           <name>IlinkDebugInfoEnable</name>
@@ -3560,6 +3596,18 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -4193,7 +4241,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -4454,6 +4502,18 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -5087,7 +5147,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -5348,6 +5408,18 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -5981,7 +6053,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -6243,6 +6315,18 @@
           <name>IlinkOptForceVfe</name>
           <state>0</state>
         </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -6357,7 +6441,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state></state>
+          <state>6.30.1.53141</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -6369,7 +6453,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state></state>
+          <state>Default	None</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -6403,12 +6487,12 @@
         </option>
         <option>
           <name>RTConfigPath2</name>
-          <state></state>
+          <state>$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h</state>
         </option>
         <option>
           <name>GFPUCoreSlave</name>
           <version>19</version>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>GBECoreSlave</name>
@@ -6547,7 +6631,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.o</state>
         </option>
         <option>
           <name>CCLibConfigHeader</name>
@@ -6592,7 +6676,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>1</state>
+          <state>3</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -6788,7 +6872,7 @@
         </option>
         <option>
           <name>AOutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.o</state>
         </option>
         <option>
           <name>AMultibyteSupport</name>
@@ -6838,7 +6922,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state></state>
+          <state>_audio.srec</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -6875,7 +6959,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>13</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -6892,7 +6976,7 @@
         </option>
         <option>
           <name>IlinkOutputFile</name>
-          <state>###Unitialized###</state>
+          <state>_audio.out</state>
         </option>
         <option>
           <name>IlinkDebugInfoEnable</name>
@@ -6956,7 +7040,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>lnk0t.icf</state>
+          <state>$TOOLKIT_DIR$\CONFIG\generic.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -7016,7 +7100,7 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state></state>
+          <state>__iar_program_start</state>
         </option>
         <option>
           <name>DoFill</name>
@@ -7136,6 +7220,18 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -8661,6 +8757,126 @@
     <file>
       <name>$PROJ_DIR$\board\ttbl.c</name>
     </file>
+  </group>
+  <group>
+    <name>SoundStretch</name>
+    <group>
+      <name>header</name>
+      <file>
+        <name>$PROJ_DIR$\_stretch\_stretch.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\AAFilter.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\BPMDetect.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\cpu_detect.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\FIFOSampleBuffer.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\FIFOSamplePipe.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\FIRFilter.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\InterpolateCubic.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\InterpolateLinear.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\InterpolateShannon.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\PeakFinder.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\RateTransposer.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\RunParameters.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\SoundTouch.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\soundtouch_config.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\STTypes.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\TDStretch.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\WavFile.h</name>
+      </file>
+    </group>
+    <group>
+      <name>src</name>
+      <file>
+        <name>$PROJ_DIR$\_stretch\_stretch.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\AAFilter.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\BPMDetect.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\FIFOSampleBuffer.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\FIRFilter.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\InterpolateCubic.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\InterpolateLinear.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\InterpolateShannon.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\mmx_optimized.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\PeakFinder.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\RateTransposer.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\RunParameters.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\SoundTouch.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\sse_optimized.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\TDStretch.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\_stretch\WavFile.cpp</name>
+      </file>
+    </group>
   </group>
   <group>
     <name>Startup</name>

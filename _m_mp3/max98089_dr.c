@@ -4,6 +4,7 @@
 
 #include "max98089_dr.h"
 #include "lpc32xx_i2c_driver.h"
+#include <string.h>
 
 _MAX98_DSP_COEFFICIENTS _band_DSP_COEFFICIENTS1;
 _MAX98_DSP_COEFFICIENTS _band_DSP_COEFFICIENTS2;

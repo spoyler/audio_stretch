@@ -183,7 +183,7 @@ EmbeddedFileSystem  efs_flash;
 EmbeddedFile        file;
 EmbeddedFile        file1;
 DirList             list;
-unsigned char       file_name[100];
+char       file_name[100];
 unsigned int        size;
 char device;
 //статус карты с книгой:
