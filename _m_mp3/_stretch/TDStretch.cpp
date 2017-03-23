@@ -304,7 +304,7 @@ int TDStretch::seekBestOverlapPositionFull(const SAMPLETYPE *refPos)
     // over the permitted range.
     bestCorr = calcCrossCorr(refPos, pMidBuffer, norm);
 
-    #pragma omp parallel for
+//    #pragma omp parallel for
     for (i = 1; i < seekLength; i ++) 
     {
         double corr;
@@ -329,7 +329,7 @@ int TDStretch::seekBestOverlapPositionFull(const SAMPLETYPE *refPos)
             // For optimal performance, enter critical section only in case that best value found.
             // in such case repeat 'if' condition as it's possible that parallel execution may have
             // updated the bestCorr value in the mean time
-            #pragma omp critical
+//            #pragma omp critical
             if (corr > bestCorr)
             {
                 bestCorr = corr;
@@ -723,7 +723,8 @@ void TDStretch::acceptNewOverlapLength(int newOverlapLength)
 
         pMidBufferUnaligned = new SAMPLETYPE[overlapLength * channels + 16 / sizeof(SAMPLETYPE)];
         // ensure that 'pMidBuffer' is aligned to 16 byte boundary for efficiency
-        pMidBuffer = (SAMPLETYPE *)SOUNDTOUCH_ALIGN_POINTER_16(pMidBufferUnaligned);
+        //pMidBuffer = (SAMPLETYPE *)SOUNDTOUCH_ALIGN_POINTER_16(pMidBufferUnaligned);
+		pMidBuffer = (SAMPLETYPE *)(pMidBufferUnaligned); // TODO add aligin 16
 
         clearMidBuffer();
     }
@@ -735,7 +736,7 @@ void TDStretch::acceptNewOverlapLength(int newOverlapLength)
 void * TDStretch::operator new(size_t s)
 {
     // Notice! don't use "new TDStretch" directly, use "newInstance" to create a new instance instead!
-    ST_THROW_RT_ERROR("Error in TDStretch::new: Don't use 'new TDStretch' directly, use 'newInstance' member instead!");
+    //ST_THROW_RT_ERROR("Error in TDStretch::new: Don't use 'new TDStretch' directly, use 'newInstance' member instead!");
     return newInstance();
 }
 
@@ -744,27 +745,27 @@ TDStretch * TDStretch::newInstance()
 {
     uint uExtensions;
 
-    uExtensions = detectCPUextensions();
+//    uExtensions = detectCPUextensions();
 
     // Check if MMX/SSE instruction set extensions supported by CPU
 
 #ifdef SOUNDTOUCH_ALLOW_MMX
     // MMX routines available only with integer sample types
-    if (uExtensions & SUPPORT_MMX)
+//    if (uExtensions & SUPPORT_MMX)
     {
         return ::new TDStretchMMX;
     }
-    else
+//    else
 #endif // SOUNDTOUCH_ALLOW_MMX
 
 
 #ifdef SOUNDTOUCH_ALLOW_SSE
-    if (uExtensions & SUPPORT_SSE)
+//    if (uExtensions & SUPPORT_SSE)
     {
         // SSE support
         return ::new TDStretchSSE;
     }
-    else
+//    else
 #endif // SOUNDTOUCH_ALLOW_SSE
 
     {
@@ -784,7 +785,7 @@ TDStretch * TDStretch::newInstance()
 
 // Overlaps samples in 'midBuffer' with the samples in 'input'. The 'Stereo' 
 // version of the routine.
-void TDStretch::overlapStereo(short *poutput, const short *input) const
+void TDStretch::overlapStereo(SAMPLETYPE *output, const SAMPLETYPE *input) const
 {
     int i;
     short temp;
@@ -794,8 +795,8 @@ void TDStretch::overlapStereo(short *poutput, const short *input) const
     {
         temp = (short)(overlapLength - i);
         cnt2 = 2 * i;
-        poutput[cnt2] = (input[cnt2] * i + pMidBuffer[cnt2] * temp )  / overlapLength;
-        poutput[cnt2 + 1] = (input[cnt2 + 1] * i + pMidBuffer[cnt2 + 1] * temp ) / overlapLength;
+        output[cnt2] = (input[cnt2] * i + pMidBuffer[cnt2] * temp )  / overlapLength;
+        output[cnt2 + 1] = (input[cnt2 + 1] * i + pMidBuffer[cnt2 + 1] * temp ) / overlapLength;
     }
 }
 
@@ -855,7 +856,7 @@ void TDStretch::calculateOverlapLength(int aoverlapMs)
 }
 
 
-double TDStretch::calcCrossCorr(const short *mixingPos, const short *compare, double &norm)
+double TDStretch::calcCrossCorr(const SAMPLETYPE *mixingPos, const SAMPLETYPE *compare, double &norm)
 {
     long corr;
     unsigned long lnorm;
@@ -889,7 +890,7 @@ double TDStretch::calcCrossCorr(const short *mixingPos, const short *compare, do
 
 
 /// Update cross-correlation by accumulating "norm" coefficient by previously calculated value
-double TDStretch::calcCrossCorrAccumulate(const short *mixingPos, const short *compare, double &norm)
+double TDStretch::calcCrossCorrAccumulate(const SAMPLETYPE *mixingPos, const SAMPLETYPE *compare, double &norm)
 {
     long corr;
     unsigned long lnorm;

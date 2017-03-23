@@ -44,7 +44,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <stdlib.h>
-#include <memory.h>
+//#include <memory.h>
 #include <string.h>
 #include <assert.h>
 
@@ -151,7 +151,7 @@ SAMPLETYPE *FIFOSampleBuffer::ptrEnd(uint slackCapacity)
 // When using this function to output samples, also remember to 'remove' the
 // outputted samples from the buffer by calling the 
 // 'receiveSamples(numSamples)' function
-SAMPLETYPE *FIFOSampleBuffer::ptrBegin()
+SAMPLETYPE *FIFOSampleBuffer::ptrBegin() const
 {
     assert(buffer);
     return buffer + bufferPos * channels;
@@ -174,10 +174,12 @@ void FIFOSampleBuffer::ensureCapacity(uint capacityRequirement)
         tempUnaligned = new SAMPLETYPE[sizeInBytes / sizeof(SAMPLETYPE) + 16 / sizeof(SAMPLETYPE)];
         if (tempUnaligned == NULL)
         {
-            ST_THROW_RT_ERROR("Couldn't allocate memory!\n");
+            //ST_THROW_RT_ERROR("Couldn't allocate memory!\n");
+			return;
         }
         // Align the buffer to begin at 16byte cache line boundary for optimal performance
-        temp = (SAMPLETYPE *)SOUNDTOUCH_ALIGN_POINTER_16(tempUnaligned);
+        //temp = (SAMPLETYPE *)SOUNDTOUCH_ALIGN_POINTER_16(tempUnaligned);
+		temp = (SAMPLETYPE *)(tempUnaligned); // TODO add align SOUNDTOUCH_ALIGN_POINTER_16
         if (samplesInBuffer)
         {
             memcpy(temp, ptrBegin(), samplesInBuffer * channels * sizeof(SAMPLETYPE));

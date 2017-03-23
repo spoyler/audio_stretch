@@ -39,10 +39,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#include <memory.h>
+//#include <memory.h>
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>
+#include <string.h>
 #include "FIRFilter.h"
 #include "cpu_detect.h"
 
@@ -86,7 +87,7 @@ uint FIRFilter::evaluateFilterStereo(SAMPLETYPE *dest, const SAMPLETYPE *src, ui
 
     end = 2 * (numSamples - length);
 
-    #pragma omp parallel for
+//    #pragma omp parallel for
     for (j = 0; j < end; j += 2) 
     {
         const SAMPLETYPE *ptr;
@@ -142,7 +143,7 @@ uint FIRFilter::evaluateFilterMono(SAMPLETYPE *dest, const SAMPLETYPE *src, uint
     assert(length != 0);
 
     end = numSamples - length;
-    #pragma omp parallel for
+//    #pragma omp parallel for
     for (j = 0; j < end; j ++) 
     {
         const SAMPLETYPE *pSrc = src + j;
@@ -189,7 +190,7 @@ uint FIRFilter::evaluateFilterMulti(SAMPLETYPE *dest, const SAMPLETYPE *src, uin
 
     end = numChannels * (numSamples - length);
 
-    #pragma omp parallel for
+//    #pragma omp parallel for
     for (j = 0; j < end; j += numChannels)
     {
         const SAMPLETYPE *ptr;
@@ -233,7 +234,9 @@ uint FIRFilter::evaluateFilterMulti(SAMPLETYPE *dest, const SAMPLETYPE *src, uin
 void FIRFilter::setCoefficients(const SAMPLETYPE *coeffs, uint newLength, uint uResultDivFactor)
 {
     assert(newLength > 0);
-    if (newLength % 8) ST_THROW_RT_ERROR("FIR filter length not divisible by 8");
+    if (newLength % 8) 
+		return;
+		//ST_THROW_RT_ERROR("FIR filter length not divisible by 8");
 
     lengthDiv8 = newLength / 8;
     length = lengthDiv8 * 8;
@@ -290,7 +293,7 @@ uint FIRFilter::evaluate(SAMPLETYPE *dest, const SAMPLETYPE *src, uint numSample
 void * FIRFilter::operator new(size_t s)
 {
     // Notice! don't use "new FIRFilter" directly, use "newInstance" to create a new instance instead!
-    ST_THROW_RT_ERROR("Error in FIRFilter::new: Don't use 'new FIRFilter', use 'newInstance' member instead!");
+    //ST_THROW_RT_ERROR("Error in FIRFilter::new: Don't use 'new FIRFilter', use 'newInstance' member instead!");
     return newInstance();
 }
 
@@ -299,26 +302,26 @@ FIRFilter * FIRFilter::newInstance()
 {
     uint uExtensions;
 
-    uExtensions = detectCPUextensions();
+	//uExtensions = detectCPUextensions();
 
     // Check if MMX/SSE instruction set extensions supported by CPU
 
 #ifdef SOUNDTOUCH_ALLOW_MMX
     // MMX routines available only with integer sample types
-    if (uExtensions & SUPPORT_MMX)
+    //if (uExtensions & SUPPORT_MMX)
     {
         return ::new FIRFilterMMX;
     }
-    else
+    //else
 #endif // SOUNDTOUCH_ALLOW_MMX
 
 #ifdef SOUNDTOUCH_ALLOW_SSE
-    if (uExtensions & SUPPORT_SSE)
+    //if (uExtensions & SUPPORT_SSE)
     {
         // SSE support
         return ::new FIRFilterSSE;
     }
-    else
+    //else
 #endif // SOUNDTOUCH_ALLOW_SSE
 
     {

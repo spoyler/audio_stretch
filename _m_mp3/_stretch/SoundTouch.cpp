@@ -71,9 +71,10 @@
 
 #include <assert.h>
 #include <stdlib.h>
-#include <memory.h>
+//#include <memory.h>
 #include <math.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "SoundTouch.h"
 #include "TDStretch.h"
@@ -298,11 +299,13 @@ void SoundTouch::putSamples(const SAMPLETYPE *samples, uint nSamples)
 {
     if (bSrateSet == false) 
     {
-        ST_THROW_RT_ERROR("SoundTouch : Sample rate not defined");
+        //ST_THROW_RT_ERROR("SoundTouch : Sample rate not defined");
+		return;
     } 
     else if (channels == 0) 
     {
-        ST_THROW_RT_ERROR("SoundTouch : Number of channels not defined");
+		return;
+        //ST_THROW_RT_ERROR("SoundTouch : Number of channels not defined");
     }
 
     // Transpose the rate of the new samples if necessary

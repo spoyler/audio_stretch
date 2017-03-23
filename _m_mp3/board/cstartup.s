@@ -80,6 +80,7 @@ vec_fiq_handler:
 ;        PUBLIC  ?cstartup
         EXTERN  ?main
         EXTERN  bootloader
+		EXTERN  __low_level_init
         REQUIRE __vector
 #ifdef BOOT_LEVEL_2
         SECTION .bootloader:CODE:NOROOT(2)
@@ -112,6 +113,11 @@ CP_DIS_MASK DEFINE  0xFFFFEFFA
                 ldr     r1,[r0]
                 bic     r1,r1,#1            ; clear WDT_CLK_ENA
                 str     r1,[r0]
+				
+; Init SDRAM
+;				LDR r0, =__low_level_init
+;				blx r0
+
 
 #ifdef BOOT_LEVEL_2
         mrs         r0,cpsr                             ; Original PSR value

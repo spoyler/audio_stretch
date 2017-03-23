@@ -21,6 +21,9 @@
 #include "lpc32xx_emc.h"
 #include "lpc32xx_clkpwr_driver.h"
 
+/* Place following data in section MY_DATA */
+
+
 /***********************************************************************
  * Startup code private data
  **********************************************************************/

@@ -62,9 +62,9 @@ public:
     int   quick;
     int   noAntiAlias;
     float goalBPM;
-    BOOL  detectBPM;
+    char  detectBPM;
 
-    RunParameters(const int nParams, const char *paramStr[]);
+    RunParameters(int nParams);
 };
 
 #endif

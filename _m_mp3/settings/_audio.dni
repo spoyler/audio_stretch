@@ -10,8 +10,8 @@ LimitSize=0
 ByteLimit=50
 [JLinkDriver]
 WatchCond=_ 0
-Watch0=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
-Watch1=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
+Watch0=_ 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 4 0 0
+Watch1=_ 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 4 0 0
 ETM_Cookie=ID100_1378816444011111011001
 ETM_Reg_GeneralControl=0x00000C08
 ETM_Reg_TriggerEvent=0x0000406F
@@ -122,7 +122,7 @@ TraceShowTime=0
 TraceShowTimeFreq=1000000
 CStepIntDis=_ 0
 [DebugChecksum]
-Checksum=1155332859
+Checksum=-23716918
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -130,38 +130,6 @@ StopOnThrow=_ 0
 ShowArgs=0
 [Disassembly]
 MixedMode=1
-[struct_types]
-Fmt0=PartitionField-numSectors	3	0
-Fmt1=SD_CMDRESP_T-cmd_status	4	0
-Fmt2=SD_CMDRESP_T-data_status	4	0
-[array_types]
-Fmt0=UNS_32[5]	4	0
-[watch_formats]
-Fmt0={W}0:_i4	3	0
-Fmt1={W}0:address	3	0
-Fmt2={W}0:dint	4	0
-Fmt3={W}0:ni	4	0
-Fmt4={W}0:sample	4	0
-Fmt5={W}0:tmp	4	0
-Fmt6={W}0:tmp1	4	0
-Fmt7={W}1:dint	1	0
-Fmt8={W}1:resp->data_status	1	0
-Fmt9={W}1:resp.cmd_resp[1]	4	0
-Fmt10={W}1:resp.cmd_resp[1] & 0x000000FF	4	0
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
-[CallStackLog]
-Enabled=0
-[DriverProfiling]
-Enabled=0
-Mode=0
-Graph=0
-Symbiont=0
 [InterruptLog]
 LogEnabled=0
 SumEnabled=0
@@ -178,14 +146,51 @@ UseAuto=0
 TypeViolation=1
 UnspecRange=1
 ActionState=1
-[Trace1]
-Enabled=0
-ShowSource=1
+[struct_types]
+Fmt0=PartitionField-numSectors	3	0
+Fmt1=SD_CMDRESP_T-cmd_status	4	0
+Fmt2=SD_CMDRESP_T-data_status	4	0
+[array_types]
+Fmt0=UNS_32[5]	4	0
+[watch_formats]
+Fmt0={W}0:_i4	3	0
+Fmt1={W}0:address	3	0
+Fmt2={W}0:dint	4	0
+Fmt3={W}0:i2cdev1	4	0
+Fmt4={W}0:ni	4	0
+Fmt5={W}0:sample	4	0
+Fmt6={W}0:tmp	4	0
+Fmt7={W}0:tmp1	4	0
+Fmt8={W}1:dint	1	0
+Fmt9={W}1:resp->data_status	1	0
+Fmt10={W}1:resp.cmd_resp[1]	4	0
+Fmt11={W}1:resp.cmd_resp[1] & 0x000000FF	4	0
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Count=0
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\lpc_io_stereo.c}.565.7" 0 0 1 "" 0 "" 0
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\lpc_io_stereo.c}.375.3" 0 0 1 "" 0 "" 0
+Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2134.3" 0 0 1 "" 0 "" 0
+Count=3
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Aliases]
 A0=_ "D:\_designer\_tiflo_player\_codes\_audio_efsl_r\main.c" "D:\_designer\_tiflo_player\_codes\_audio_efsl_rw\main.c"
 Count=1
 SuppressDialog=0
+[Trace1]
+Enabled=0
+ShowSource=1
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=

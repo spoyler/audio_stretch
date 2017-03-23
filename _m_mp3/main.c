@@ -2118,37 +2118,12 @@ char device1;
 
  
 
-  
-  _int_rec = 0x00;
-  
-// Init MMU
-  CP15_Mmu(FALSE);            // Dis able MMU
-  CP15_Cache(FALSE);          //cach dis
-  // Privileged permissions  User permissions AP
-  // Read-only               Read-only        0 
-  CP15_SysProt(FALSE);
-  CP15_RomProt(TRUE);
-  CP15_InitMmuTtb(TtSB,TtTB); // Build L1 and L2 Translation  tables
-  CP15_SetTtb(L1Table);       // Set base address of the L1 Translation table
-  CP15_SetDomain( (DomainManager << 2*1) | (DomainClient << 0)); // Set domains
-  CP15_Mmu(TRUE);             // Enable MMU
-  CP15_Cache(TRUE);           // Enable ICache,DCache
-
   /* Disable interrupts in ARM core */
   disable_irq();
   
     /* Initialize interrupt system */
   int_initialize(0xFFFFFFFF);
-
-
-  _init_pll();
-  
-  
-//инит в boot0 
-#if 1  
-  
-  sdr_sdram_setup(AHB_CLK);
-#endif  
+ 
   
   _modes |= _SP;
   //_modes |= _HP;

@@ -15,10 +15,10 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Last changed  : $Date: 2006/02/05 16:44:06 $
-// File revision : $Revision: 1.9 $
+// Last changed  : $Date: 2014-01-06 00:40:22 +0300 (Пн, 06 янв 2014) $
+// File revision : $Revision: 4 $
 //
-// $Id: FIFOSampleBuffer.h,v 1.9 2006/02/05 16:44:06 Olli Exp $
+// $Id: FIFOSampleBuffer.h 177 2014-01-05 21:40:22Z oparviai $
 //
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -48,6 +48,8 @@
 
 #include "FIFOSamplePipe.h"
 
+namespace soundtouch
+{
 
 /// Sample buffer working in FIFO (first-in-first-out) principle. The class takes
 /// care of storage size adjustment and data moving during input/output operations.
@@ -83,15 +85,15 @@ private:
     void rewind();
 
     /// Ensures that the buffer has capacity for at least this many samples.
-    void ensureCapacity(const uint capacityRequirement);
+    void ensureCapacity(uint capacityRequirement);
 
     /// Returns current capacity.
     uint getCapacity() const;
- 
+
 public:
 
     /// Constructor
-    FIFOSampleBuffer(uint numChannels = 2     ///< Number of channels, 1=mono, 2=stereo.
+    FIFOSampleBuffer(int numChannels = 2     ///< Number of channels, 1=mono, 2=stereo.
                                               ///< Default is stereo.
                      );
 
@@ -158,15 +160,25 @@ public:
     virtual uint numSamples() const;
 
     /// Sets number of channels, 1 = mono, 2 = stereo.
-    void setChannels(uint numChannels);
+    void setChannels(int numChannels);
+
+    /// Get number of channels
+    int getChannels() 
+    {
+        return channels;
+    }
 
     /// Returns nonzero if there aren't any samples available for outputting.
     virtual int isEmpty() const;
 
     /// Clears all the samples.
     virtual void clear();
+
+    /// allow trimming (downwards) amount of samples in pipeline.
+    /// Returns adjusted amount of samples
+    uint adjustAmountOfSamples(uint numSamples);
 };
 
-
+}
 
 #endif

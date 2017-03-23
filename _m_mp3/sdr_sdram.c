@@ -92,15 +92,26 @@ void sdr_sdram_setup(UNS_32 clk)
 	tmp = (EMC_DYN_CLK_ALWAYS_ON | EMC_DYN_CLKEN_ALWAYS_ON |
 		EMC_DYN_DIS_INV_MEMCLK);
 	EMC->emcdynamiccontrol = (tmp | EMC_DYN_NOP_MODE);
-	timer_wait_us(TIMER_CNTR0, 100);
+//	timer_wait_us(TIMER_CNTR0, 100);
+	
+	int32_t timer = 100000;
+	while (timer-- >0);
 
 	/* Issue a precharge all command */
 	EMC->emcdynamiccontrol = (tmp | EMC_DYN_PALL_MODE);
 	EMC->emcdynamicrefresh = EMC_DYN_REFRESH_IVAL(4);
-	timer_wait_us(TIMER_CNTR0, 10);
+//	timer_wait_us(TIMER_CNTR0, 10);
+	
+	timer = 100000;
+	while (timer-- >0);
+
 
 	/* Fast dynamic refresh for at least a few SDRAM clock cycles */
-	timer_wait_us(TIMER_CNTR0, 10);
+//	timer_wait_us(TIMER_CNTR0, 10);
+	
+	timer = 100000;
+	while (timer-- >0);
+
 
 	/* Normal refresh timing */
 	EMC->emcdynamicrefresh =
@@ -118,7 +129,10 @@ void sdr_sdram_setup(UNS_32 clk)
 	/* Normal SDRAM mode */
 	EMC->emcdynamiccontrol = EMC_DYN_NORMAL_MODE |
 		EMC_DYN_DIS_INV_MEMCLK | EMC_DYN_DIS_MEMCLK_IN_SFRSH;
-	timer_wait_us(TIMER_CNTR0, 1);
+//	timer_wait_us(TIMER_CNTR0, 1);
+	timer = 100000;
+	while (timer-- >0);
+
 }
 
 

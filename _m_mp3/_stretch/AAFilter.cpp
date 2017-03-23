@@ -40,7 +40,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#include <memory.h>
+//#include <memory.h>
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>

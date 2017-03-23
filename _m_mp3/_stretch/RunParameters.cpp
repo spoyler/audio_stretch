@@ -102,7 +102,7 @@ static int _toLowerCase(int c)
 
 
 // Constructor
-RunParameters::RunParameters(const int nParams, const char *paramStr[])
+RunParameters::RunParameters(int nParams)
 {
 
 
@@ -114,7 +114,7 @@ RunParameters::RunParameters(const int nParams, const char *paramStr[])
     quick = 0;
     noAntiAlias = 0;
     goalBPM = 0;
-    detectBPM = FALSE;
+    detectBPM = 0;
 
 
 }
@@ -224,7 +224,7 @@ void RunParameters::parseSwitchParam(const string &str)
 
         case 'b' :
             // switch '-bpm=xx'
-            detectBPM = TRUE;
+            detectBPM = 1;
             /*try
             {
                 goalBPM = parseSwitchValue(str);

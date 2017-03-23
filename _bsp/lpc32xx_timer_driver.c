@@ -220,8 +220,12 @@ void timer_delay_cmn(TIMER_CNTR_REGS_T *pTimer, UNS_32 usec)
   pTimer->ctcr = TIMER_CNTR_SET_MODE(TIMER_CNTR_CTCR_TIMER_MODE);
 
   /* Set prescale counter value for a 1uS tick */
-  pTimer->pr = (UNS_32) timer_usec_to_val(
-                 timer_num_to_clk_enum[timernum], 1);
+//  pTimer->pr = (UNS_32) timer_usec_to_val(
+//                 timer_num_to_clk_enum[timernum], 1);
+
+  	// dont use static 
+    pTimer->pr = (UNS_32) timer_usec_to_val(
+                 CLKPWR_TIMER0_CLK, 1);
 
   /* Set match for number of usecs */
   pTimer->mr[0] = usec;

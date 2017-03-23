@@ -54,7 +54,7 @@
 /// Checks which instruction set extensions are supported by the CPU.
 ///
 /// \return A bitmask of supported extensions, see SUPPORT_... defines.
-uint detectCPUextensions(void);
+//uint detectCPUextensions(void);
 
 /// Disables given set of instruction extensions. See SUPPORT_... defines.
 void disableExtensions(uint wDisableMask);

@@ -169,6 +169,7 @@
           <state>SIZE_LONG=4</state>
           <state>SIZE_LONG_LONG=8</state>
           <state>FPM_DEFAULT</state>
+          <state>__SOFTFP__</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -184,7 +185,7 @@
         </option>
         <option>
           <name>CCListCFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCListCMnemonics</name>
@@ -330,7 +331,7 @@
         <option>
           <name>CCOptStrategy</name>
           <version>0</version>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCOptLevelSlave</name>
@@ -368,7 +369,7 @@
         </option>
         <option>
           <name>IccAllowVLA</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccCppDialect</name>
@@ -388,7 +389,7 @@
         </option>
         <option>
           <name>IccCppInlineSemantics</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccCmsis</name>
@@ -670,27 +671,27 @@
         </option>
         <option>
           <name>IlinkMapFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogInitialization</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogModule</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogSection</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogVeneer</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkIcfOverride</name>
@@ -730,7 +731,7 @@
         </option>
         <option>
           <name>IlinkUseExtraOptions</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkExtraOptions</name>
@@ -833,15 +834,15 @@
         </option>
         <option>
           <name>IlinkLogAutoLibSelect</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogRedirSymbols</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogUnusedFragments</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkCrcReverseByteOrder</name>
@@ -857,7 +858,7 @@
         </option>
         <option>
           <name>IlinkOptExceptionsAllow</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkOptExceptionsForce</name>
@@ -869,11 +870,11 @@
         </option>
         <option>
           <name>IlinkOptMergeDuplSections</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkOptUseVfe</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkOptForceVfe</name>
@@ -881,7 +882,7 @@
         </option>
         <option>
           <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkStackControlFile</name>
@@ -889,7 +890,7 @@
         </option>
         <option>
           <name>IlinkStackCallGraphFile</name>
-          <state></state>
+          <state>D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\Debug_iRAM\List\1.txt</state>
         </option>
       </data>
     </settings>
@@ -8760,6 +8761,9 @@
   </group>
   <group>
     <name>SoundStretch</name>
+    <excluded>
+      <configuration>Debug iRAM</configuration>
+    </excluded>
     <group>
       <name>header</name>
       <file>
@@ -8827,6 +8831,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\BPMDetect.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\FIFOSampleBuffer.cpp</name>
@@ -8842,9 +8849,6 @@
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\InterpolateLinear.cpp</name>
-        <excluded>
-          <configuration>Debug iRAM</configuration>
-        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\InterpolateShannon.cpp</name>
@@ -8854,6 +8858,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\mmx_optimized.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\PeakFinder.cpp</name>
@@ -8863,12 +8870,18 @@
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\RunParameters.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\SoundTouch.cpp</name>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\sse_optimized.cpp</name>
+        <excluded>
+          <configuration>Debug iRAM</configuration>
+        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\TDStretch.cpp</name>
@@ -8882,6 +8895,9 @@
     <name>Startup</name>
     <file>
       <name>$PROJ_DIR$\board\cstartup.s</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\board\iram_init.c</name>
     </file>
   </group>
   <file>
