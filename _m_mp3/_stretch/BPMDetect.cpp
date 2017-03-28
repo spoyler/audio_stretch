@@ -130,14 +130,14 @@ BPMDetect::BPMDetect(int numChannels, int aSampleRate)
 
     // choose decimation factor so that result is approx. 1000 Hz
     decimateBy = sampleRate / 1000;
-    assert(decimateBy > 0);
-    assert(INPUT_BLOCK_SAMPLES < decimateBy * DECIMATED_BLOCK_SAMPLES);
+    //assert(decimateBy > 0);
+    //assert(INPUT_BLOCK_SAMPLES < decimateBy * DECIMATED_BLOCK_SAMPLES);
 
     // Calculate window length & starting item according to desired min & max bpms
     windowLen = (60 * sampleRate) / (decimateBy * MIN_BPM);
     windowStart = (60 * sampleRate) / (decimateBy * MAX_BPM);
 
-    assert(windowLen > windowStart);
+    //assert(windowLen > windowStart);
 
     // allocate new working objects
     xcorr = new float[windowLen];
@@ -176,8 +176,8 @@ int BPMDetect::decimate(SAMPLETYPE *dest, const SAMPLETYPE *src, int numsamples)
     int count, outcount;
     LONG_SAMPLETYPE out;
 
-    assert(channels > 0);
-    assert(decimateBy > 0);
+    //assert(channels > 0);
+    //assert(decimateBy > 0);
     outcount = 0;
     for (count = 0; count < numsamples; count ++) 
     {
@@ -223,7 +223,7 @@ void BPMDetect::updateXCorr(int process_samples)
     int offs;
     SAMPLETYPE *pBuffer;
     
-    assert(buffer->numSamples() >= (uint)(process_samples + windowLen));
+    //assert(buffer->numSamples() >= (uint)(process_samples + windowLen));
 
     pBuffer = buffer->ptrBegin();
     #pragma omp parallel for
@@ -363,7 +363,7 @@ float BPMDetect::getBpm()
     // find peak position
     peakPos = peakFinder.detectPeak(xcorr, windowStart, windowLen);
 
-    assert(decimateBy != 0);
+    //assert(decimateBy != 0);
     if (peakPos < 1e-9) return 0.0; // detection failed.
 
     // calculate BPM

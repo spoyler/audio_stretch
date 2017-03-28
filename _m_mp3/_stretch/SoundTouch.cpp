@@ -254,7 +254,7 @@ void SoundTouch::calcEffectiveRateAndTempo()
         {
             FIFOSamplePipe *tempoOut;
 
-            assert(output == pRateTransposer);
+            //assert(output == pRateTransposer);
             // move samples in the current output buffer to the output of pTDStretch
             tempoOut = pTDStretch->getOutput();
             tempoOut->moveSamples(*output);
@@ -271,7 +271,7 @@ void SoundTouch::calcEffectiveRateAndTempo()
         {
             FIFOSamplePipe *transOut;
 
-            assert(output == pTDStretch);
+            //assert(output == pTDStretch);
             // move samples in the current output buffer to the output of pRateTransposer
             transOut = pRateTransposer->getOutput();
             transOut->moveSamples(*output);
@@ -297,6 +297,7 @@ void SoundTouch::setSampleRate(uint srate)
 // the input of the object.
 void SoundTouch::putSamples(const SAMPLETYPE *samples, uint nSamples)
 {
+#if 	 0
     if (bSrateSet == false) 
     {
         //ST_THROW_RT_ERROR("SoundTouch : Sample rate not defined");
@@ -313,7 +314,7 @@ void SoundTouch::putSamples(const SAMPLETYPE *samples, uint nSamples)
     if (rate == 1.0f) 
     {
         // The rate value is same as the original, simply evaluate the tempo changer. 
-        assert(output == pTDStretch);
+        //assert(output == pTDStretch);
         if (pRateTransposer->isEmpty() == 0) 
         {
             // yet flush the last samples in the pitch transposer buffer
@@ -332,15 +333,17 @@ void SoundTouch::putSamples(const SAMPLETYPE *samples, uint nSamples)
     if (rate <= 1.0f) 
     {
         // transpose the rate down, output the transposed sound to tempo changer buffer
-        assert(output == pTDStretch);
+        //assert(output == pTDStretch);
         pRateTransposer->putSamples(samples, nSamples);
         pTDStretch->moveSamples(*pRateTransposer);
     } 
     else 
 #endif
+		
+#endif		
     {
         // evaluate the tempo changer, then transpose the rate up, 
-        assert(output == pRateTransposer);
+        //assert(output == pRateTransposer);
         pTDStretch->putSamples(samples, nSamples);
         pRateTransposer->moveSamples(*pTDStretch);
     }

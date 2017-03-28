@@ -331,7 +331,7 @@
         <option>
           <name>CCOptStrategy</name>
           <version>0</version>
-          <state>1</state>
+          <state>2</state>
         </option>
         <option>
           <name>CCOptLevelSlave</name>
@@ -8761,9 +8761,6 @@
   </group>
   <group>
     <name>SoundStretch</name>
-    <excluded>
-      <configuration>Debug iRAM</configuration>
-    </excluded>
     <group>
       <name>header</name>
       <file>

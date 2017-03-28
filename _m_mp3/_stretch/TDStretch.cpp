@@ -278,7 +278,7 @@ inline void TDStretch::overlap(SAMPLETYPE *pOutput, const SAMPLETYPE *pInput, ui
     else 
 #endif // USE_MULTICH_ALWAYS
     {
-        assert(channels > 0);
+        //assert(channels > 0);
         overlapMulti(pOutput, pInput + channels * ovlPos);
     }
 }
@@ -586,9 +586,9 @@ void TDStretch::setTempo(double newTempo)
 // Sets the number of channels, 1 = mono, 2 = stereo
 void TDStretch::setChannels(int numChannels)
 {
-    assert(numChannels > 0);
+    //assert(numChannels > 0);
     if (channels == numChannels) return;
-//    assert(numChannels == 1 || numChannels == 2);
+//    //assert(numChannels == 1 || numChannels == 2);
 
     channels = numChannels;
     inputBuffer.setChannels(channels);
@@ -605,7 +605,7 @@ void TDStretch::setChannels(int numChannels)
 /*
 void TDStretch::processNominalTempo()
 {
-    assert(tempo == 1.0f);
+    //assert(tempo == 1.0f);
 
     if (bMidBufferDirty) 
     {
@@ -681,7 +681,7 @@ void TDStretch::processSamples()
         // Copies the end of the current sequence from 'inputBuffer' to 
         // 'midBuffer' for being mixed with the beginning of the next 
         // processing sequence and so on
-        assert((offset + temp + overlapLength * 2) <= (int)inputBuffer.numSamples());
+        //assert((offset + temp + overlapLength * 2) <= (int)inputBuffer.numSamples());
         memcpy(pMidBuffer, inputBuffer.ptrBegin() + channels * (offset + temp + overlapLength), 
             channels * sizeof(SAMPLETYPE) * overlapLength);
 
@@ -713,7 +713,7 @@ void TDStretch::acceptNewOverlapLength(int newOverlapLength)
 {
     int prevOvl;
 
-    assert(newOverlapLength >= 0);
+    //assert(newOverlapLength >= 0);
     prevOvl = overlapLength;
     overlapLength = newOverlapLength;
 
@@ -835,7 +835,7 @@ void TDStretch::calculateOverlapLength(int aoverlapMs)
 {
     int newOvl;
 
-    assert(aoverlapMs >= 0);
+    //assert(aoverlapMs >= 0);
 
     // calculate overlap length so that it's power of 2 - thus it's easy to do
     // integer division by right-shifting. Term "-1" at end is to account for 
@@ -999,7 +999,7 @@ void TDStretch::calculateOverlapLength(int overlapInMsec)
 {
     int newOvl;
 
-    assert(overlapInMsec >= 0);
+    //assert(overlapInMsec >= 0);
     newOvl = (sampleRate * overlapInMsec) / 1000;
     if (newOvl < 16) newOvl = 16;
 

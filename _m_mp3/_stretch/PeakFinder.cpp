@@ -147,7 +147,7 @@ int PeakFinder::findCrossingLevel(const float *data, float level, int peakpos, i
     int pos;
 
     peaklevel = data[peakpos];
-    assert(peaklevel >= level);
+    //assert(peaklevel >= level);
     pos = peakpos;
     while ((pos >= minPos) && (pos < maxPos))
     {
@@ -197,7 +197,7 @@ double PeakFinder::getPeakCenter(const float *data, int peakpos) const
     if (gp1 == gp2) 
     {
         // avoid rounding errors when all are equal
-        assert(gp1 == peakpos);
+        //assert(gp1 == peakpos);
         cutLevel = groundLevel = peakLevel;
     } else {
         // get average of the ground levels

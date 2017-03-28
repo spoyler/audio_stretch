@@ -78,7 +78,7 @@ int InterpolateLinearInteger::transposeMono(SAMPLETYPE *dest, const SAMPLETYPE *
     {
         LONG_SAMPLETYPE temp;
     
-        assert(iFract < SCALE);
+        //assert(iFract < SCALE);
 
         temp = (SCALE - iFract) * src[0] + iFract * src[1];
         dest[i] = (SAMPLETYPE)(temp / SCALE);
@@ -112,7 +112,7 @@ int InterpolateLinearInteger::transposeStereo(SAMPLETYPE *dest, const SAMPLETYPE
         LONG_SAMPLETYPE temp0;
         LONG_SAMPLETYPE temp1;
     
-        assert(iFract < SCALE);
+        //assert(iFract < SCALE);
 
         temp0 = (SCALE - iFract) * src[0] + iFract * src[2];
         temp1 = (SCALE - iFract) * src[1] + iFract * src[3];
@@ -145,7 +145,7 @@ int InterpolateLinearInteger::transposeMulti(SAMPLETYPE *dest, const SAMPLETYPE 
     {
         LONG_SAMPLETYPE temp, vol1;
     
-        assert(iFract < SCALE);
+        //assert(iFract < SCALE);
         vol1 = (SCALE - iFract);
         for (int c = 0; c < numChannels; c ++)
         {
@@ -213,7 +213,7 @@ int InterpolateLinearFloat::transposeMono(SAMPLETYPE *dest, const SAMPLETYPE *sr
     while (srcCount < srcSampleEnd)
     {
         double out;
-        assert(fract < 1.0);
+        //assert(fract < 1.0);
 
         out = (1.0 - fract) * src[0] + fract * src[1];
         dest[i] = (SAMPLETYPE)out;
@@ -245,7 +245,7 @@ int InterpolateLinearFloat::transposeStereo(SAMPLETYPE *dest, const SAMPLETYPE *
     while (srcCount < srcSampleEnd)
     {
         double out0, out1;
-        assert(fract < 1.0);
+        //assert(fract < 1.0);
 
         out0 = (1.0 - fract) * src[0] + fract * src[2];
         out1 = (1.0 - fract) * src[1] + fract * src[3];

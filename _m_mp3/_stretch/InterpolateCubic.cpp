@@ -80,7 +80,7 @@ int InterpolateCubic::transposeMono(SAMPLETYPE *pdest,
         const float x0 = x1*x2;           // x^3
         float y0, y1, y2, y3;
 
-        assert(fract < 1.0);
+        //assert(fract < 1.0);
 
         y0 =  _coeffs[0] * x0 +  _coeffs[1] * x1 +  _coeffs[2] * x2 +  _coeffs[3] * x3;
         y1 =  _coeffs[4] * x0 +  _coeffs[5] * x1 +  _coeffs[6] * x2 +  _coeffs[7] * x3;
@@ -125,7 +125,7 @@ int InterpolateCubic::transposeStereo(SAMPLETYPE *pdest,
         float y0, y1, y2, y3;
         float out0, out1;
 
-        assert(fract < 1.0);
+        //assert(fract < 1.0);
 
         y0 =  _coeffs[0] * x0 +  _coeffs[1] * x1 +  _coeffs[2] * x2 +  _coeffs[3] * x3;
         y1 =  _coeffs[4] * x0 +  _coeffs[5] * x1 +  _coeffs[6] * x2 +  _coeffs[7] * x3;
@@ -171,7 +171,7 @@ int InterpolateCubic::transposeMulti(SAMPLETYPE *pdest,
         const float x0 = x1*x2;           // x^3
         float y0, y1, y2, y3;
 
-        assert(fract < 1.0);
+        //assert(fract < 1.0);
 
         y0 =  _coeffs[0] * x0 +  _coeffs[1] * x1 +  _coeffs[2] * x2 +  _coeffs[3] * x3;
         y1 =  _coeffs[4] * x0 +  _coeffs[5] * x1 +  _coeffs[6] * x2 +  _coeffs[7] * x3;

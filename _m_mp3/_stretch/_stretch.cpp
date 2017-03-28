@@ -58,13 +58,15 @@ void _stretch_init(float newTempo)
   setup(pSoundTouch,/* inFile,*/ params);
   nChannels = 1;//inFile->getNumChannels();
   buffSizeSamples = BUFF_SIZE / nChannels;
-  _en = 0x01; //не нужен корректор
+  _en = 0x01; //не нужен корректо
+  newTempo = 2;
   _setTempo(newTempo);
+  
   _bnewTempo = newTempo;
   if(newTempo<1.4)
     _en = 0x0;
   
-	delete   pSoundTouch;
+	//delete   pSoundTouch;
 }
 
 

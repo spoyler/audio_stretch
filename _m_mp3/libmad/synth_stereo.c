@@ -741,7 +741,7 @@ void synth_full(struct mad_synth *synth, struct mad_frame *frame,
     }  /* for di canale */
 
     /* Render di un blocco */
-#if 0    
+#if 1
     if(_stretch_Is_en())
     {
       _stretch_putSamples(short_sample_buff[0], 32);

@@ -80,10 +80,10 @@ uint FIRFilter::evaluateFilterStereo(SAMPLETYPE *dest, const SAMPLETYPE *src, ui
     double dScaler = 1.0 / (double)resultDivider;
 #endif
 
-    assert(length != 0);
-    assert(src != NULL);
-    assert(dest != NULL);
-    assert(filterCoeffs != NULL);
+    //assert(length != 0);
+    //assert(src != NULL);
+    //assert(dest != NULL);
+    //assert(filterCoeffs != NULL);
 
     end = 2 * (numSamples - length);
 
@@ -140,7 +140,7 @@ uint FIRFilter::evaluateFilterMono(SAMPLETYPE *dest, const SAMPLETYPE *src, uint
     double dScaler = 1.0 / (double)resultDivider;
 #endif
 
-    assert(length != 0);
+    //assert(length != 0);
 
     end = numSamples - length;
 //    #pragma omp parallel for
@@ -182,11 +182,11 @@ uint FIRFilter::evaluateFilterMulti(SAMPLETYPE *dest, const SAMPLETYPE *src, uin
     double dScaler = 1.0 / (double)resultDivider;
 #endif
 
-    assert(length != 0);
-    assert(src != NULL);
-    assert(dest != NULL);
-    assert(filterCoeffs != NULL);
-    assert(numChannels < 16);
+    //assert(length != 0);
+    //assert(src != NULL);
+    //assert(dest != NULL);
+    //assert(filterCoeffs != NULL);
+    //assert(numChannels < 16);
 
     end = numChannels * (numSamples - length);
 
@@ -233,14 +233,14 @@ uint FIRFilter::evaluateFilterMulti(SAMPLETYPE *dest, const SAMPLETYPE *src, uin
 // Throws an exception if filter length isn't divisible by 8
 void FIRFilter::setCoefficients(const SAMPLETYPE *coeffs, uint newLength, uint uResultDivFactor)
 {
-    assert(newLength > 0);
+    //assert(newLength > 0);
     if (newLength % 8) 
 		return;
 		//ST_THROW_RT_ERROR("FIR filter length not divisible by 8");
 
     lengthDiv8 = newLength / 8;
     length = lengthDiv8 * 8;
-    assert(length == newLength);
+    //assert(length == newLength);
 
     resultDivFactor = uResultDivFactor;
     resultDivider = (SAMPLETYPE)::pow(2.0, (int)resultDivFactor);
@@ -264,8 +264,8 @@ uint FIRFilter::getLength() const
 // smaller than the amount of input samples.
 uint FIRFilter::evaluate(SAMPLETYPE *dest, const SAMPLETYPE *src, uint numSamples, uint numChannels) 
 {
-    assert(length > 0);
-    assert(lengthDiv8 * 8 == length);
+    //assert(length > 0);
+    //assert(lengthDiv8 * 8 == length);
 
     if (numSamples < length) return 0;
 
@@ -281,7 +281,7 @@ uint FIRFilter::evaluate(SAMPLETYPE *dest, const SAMPLETYPE *src, uint numSample
     else
 #endif // USE_MULTICH_ALWAYS
     {
-        assert(numChannels > 0);
+        //assert(numChannels > 0);
         return evaluateFilterMulti(dest, src, numSamples, numChannels);
     }
 }

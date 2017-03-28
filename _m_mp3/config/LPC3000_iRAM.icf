@@ -18,7 +18,7 @@ define symbol __ICFEDIT_size_irqstack__ = 0x500;
 define symbol __ICFEDIT_size_fiqstack__ = 0x0;
 define symbol __ICFEDIT_size_undstack__ = 0x0;
 define symbol __ICFEDIT_size_abtstack__ = 0x0;
-define symbol __ICFEDIT_size_heap__     = 0x040000;
+define symbol __ICFEDIT_size_heap__     = 0x400000;
 /**** End of ICF editor section. ###ICF###*/
 
 define memory mem with size = 4G;
@@ -33,65 +33,46 @@ define block UND_STACK with alignment = 8, size = __ICFEDIT_size_undstack__ { };
 define block ABT_STACK with alignment = 8, size = __ICFEDIT_size_abtstack__ { };
 define block HEAP      with alignment = 8, size = __ICFEDIT_size_heap__     { };
 
-define block LIB_CODE with fixed order
+define block USER_DATA with fixed order
 {
-readwrite object board_nand_ids.o,
-readwrite object lpc32xx_adc_driver.o,
-readwrite object lpc32xx_clcdc_driver.o,
-readwrite object lpc32xx_clkpwr_driver.o,
-readwrite object lpc32xx_dma_driver.o,
-readwrite object lpc32xx_gpio_driver.o,
-readwrite object lpc32xx_hstimer_driver.o,
-readwrite object lpc32xx_hsuart_driver.o,
-readwrite object lpc32xx_i2c_driver.o,
-readwrite object lpc32xx_i2s_driver.o,
-readwrite object lpc32xx_intc_driver.o,
-readwrite object lpc32xx_kscan_driver.o,
-readwrite object lpc32xx_mlcnand_driver.o,
-readwrite object lpc32xx_mstimer_driver.o,
-readwrite object lpc32xx_mstr_i2c_driver.o,
-readwrite object lpc32xx_pwm_driver.o,
-readwrite object lpc32xx_rtc_driver.o,
-readwrite object lpc32xx_sdcard_driver.o,
-readwrite object lpc32xx_slcnand_driver.o,
-readwrite object lpc32xx_spi_driver.o,
-readwrite object lpc32xx_ssp_driver.o,
-readwrite object lpc32xx_timer_driver.o,
-readwrite object lpc32xx_tsc_driver.o,
-readwrite object lpc32xx_uart_driver.o,
-readwrite object lpc32xx_wdt_driver.o,
-readwrite object lpc3xxx_spwm_driver.o,
-readwrite object phy3250_board.o
+readwrite object AAFilter.o,
+readwrite object BPMDetect.o,
+readwrite object FIFOSampleBuffer.o,
+readwrite object FIRFilter.o,
+readwrite object InterpolateCubic.o,
+readwrite object InterpolateLinear.o,
+readwrite object InterpolateShannon.o,
+readwrite object mmx_optimized.o,
+readwrite object PeakFinder.o,
+readwrite object RateTransposer.o,
+readwrite object RunParameters.o,
+readwrite object SoundTouch.o,
+readwrite object sse_optimized.o,
+readwrite object TDStretch.o,
+readwrite object WavFile.o
 };
-
+/*
 define block USER_CODE with fixed order
 {
-readwrite object _aic23.o,
-readwrite object _boost_tpa6011.o,
-readwrite object _crypt.o,
-readwrite object _i2c.o,
-readwrite object _i2s.o,
-readwrite object _nand_slc.o,
-readwrite object _pll.o,
-readwrite object _sdcard.o,
-readwrite object _sdcard_spi.o,
-readwrite object _wd.o,
-readwrite object charger.o,
-readwrite object drv_booster.o,
-readwrite object keeper.o,
-readwrite object keyb.o,
-readwrite object max98_example.o,
-readwrite object max98089_dr.o,
-readwrite object max98089_driver.o,
-readwrite object sdr_sdram.o,
-readwrite object sdram_common.o,
-readwrite object write.o
+readonly section AAFilter.o,
+readonly section BPMDetect.o,
+readonly section FIFOSampleBuffer.o,
+readonly section FIRFilter.o,
+readonly section InterpolateCubic.o,
+readonly section InterpolateLinear.o,
+readonly section InterpolateShannon.o,
+readonly section mmx_optimized.o,
+readonly section PeakFinder.o,
+readonly section RateTransposer.o,
+readonly section RunParameters.o,
+readonly section SoundTouch.o,
+readonly section sse_optimized.o,
+readonly section TDStretch.o,
+readonly section WavFile.o
 };
+*/
+initialize by copy with packing = zeros { readwrite};
 
-initialize by copy with packing = zeros { readwrite }
-	except { section .intvec, readwrite object sdram_common.o, readwrite object sdr_sdram.o, 
-			readwrite object _pll, readwrite object hclkdivs.o};
- 
 
 /*initialize by copy { readonly, readwrite };*/
 do not initialize  { section .noinit };
@@ -100,16 +81,12 @@ do not initialize  { section MMU_TT };
 place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };
 
 place in RAM_region   { readonly };
-/*place in RAM_region   { readwrite,
+place in RAM_region   { readwrite,
                         block CSTACK, block SVC_STACK, block IRQ_STACK, block FIQ_STACK,
                         block UND_STACK, block ABT_STACK, 
-                        readwrite data section MMU_TT };*/
+                        readwrite data section MMU_TT };
 
-place in RAM_region   { block CSTACK, block SVC_STACK, block IRQ_STACK, block FIQ_STACK,
-                        block UND_STACK, block ABT_STACK, 
-                        readwrite data section MMU_TT, readwrite object sdr_sdram.o, 
-						readwrite object _pll, readwrite object hclkdivs.o, block LIB_CODE, block USER_CODE};
 
-place in SDRAM_region   { readwrite, block HEAP};
+place in SDRAM_region   {/*block USER_CODE,*/ block USER_DATA, readwrite object  lpc3250_mmc.o,
+							readwrite object lpc_io_stereo.o , block HEAP};
 
-/*place in SDRAM_region {block HEAP};*/

@@ -2115,16 +2115,34 @@ unsigned char _folder[100];
 char device;
 char device1;
 
-
- 
+	// Init MMU
+  CP15_Mmu(FALSE);            // Dis able MMU
+  CP15_Cache(FALSE);          //cach dis
+  // Privileged permissions  User permissions AP
+  // Read-only               Read-only        0 
+  CP15_SysProt(FALSE);
+  CP15_RomProt(TRUE);
+  CP15_InitMmuTtb(TtSB,TtTB); // Build L1 and L2 Translation  tables
+  CP15_SetTtb(L1Table);       // Set base address of the L1 Translation table
+  CP15_SetDomain( (DomainManager << 2*1) | (DomainClient << 0)); // Set domains
+  CP15_Mmu(TRUE);             // Enable MMU
+  CP15_Cache(TRUE);           // Enable ICache,DCache
 
   /* Disable interrupts in ARM core */
   disable_irq();
   
-    /* Initialize interrupt system */
+  _init_pll();
+
+  /* Initialize interrupt system */
   int_initialize(0xFFFFFFFF);
- 
   
+  
+//инит в boot0 
+#if 1  
+ 
+  sdr_sdram_setup(AHB_CLK);
+#endif  
+ 
   _modes |= _SP;
   //_modes |= _HP;
   
@@ -2134,6 +2152,9 @@ char device1;
   init_IO(); //init_timer() ?????????? ?????
   enable_irq();
   keyb_Init();//???? ???????
+  
+  
+  _stretch_init(_k1);
 
 //определим как то текущую позицию в каталоге книг или mp3
 #if 0  
@@ -4017,7 +4038,7 @@ unsigned long _l;
             file_fclose(&file);
             _int_rec=0x0;
 
-            //_stretch_init(_k1);
+            _stretch_init(_k1);
           }          
           
 //поставлена задача идти на закладку

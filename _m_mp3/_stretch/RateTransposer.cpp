@@ -145,7 +145,7 @@ void RateTransposer::processSamples(const SAMPLETYPE *src, uint nSamples)
         return;
     }
 
-    assert(pAAFilter);
+    //assert(pAAFilter);
 
     // Transpose with anti-alias filter
     if (pTransposer->rate < 1.0f) 
@@ -177,7 +177,7 @@ void RateTransposer::processSamples(const SAMPLETYPE *src, uint nSamples)
 // Sets the number of channels, 1 = mono, 2 = stereo
 void RateTransposer::setChannels(int nChannels)
 {
-    assert(nChannels > 0);
+    //assert(nChannels > 0);
 
     if (pTransposer->numChannels == nChannels) return;
     pTransposer->setChannels(nChannels);
@@ -242,7 +242,7 @@ int TransposerBase::transpose(FIFOSampleBuffer &dest, FIFOSampleBuffer &src)
     else 
 #endif // USE_MULTICH_ALWAYS
     {
-        assert(numChannels > 0);
+        //assert(numChannels > 0);
         numOutput = transposeMulti(pdest, psrc, numSrcSamples);
     }
     dest.putSamples(numOutput);
@@ -295,7 +295,7 @@ TransposerBase *TransposerBase::newInstance()
             return new InterpolateShannon;
 
         default:
-            assert(false);
+            //assert(false);
             return NULL;
     }
 #endif

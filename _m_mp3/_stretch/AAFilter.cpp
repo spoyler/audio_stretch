@@ -128,10 +128,10 @@ void AAFilter::calculateCoeffs()
     double *work;
     SAMPLETYPE *coeffs;
 
-    assert(length >= 2);
-    assert(length % 4 == 0);
-    assert(cutoffFreq >= 0);
-    assert(cutoffFreq <= 0.5);
+    //assert(length >= 2);
+    //assert(length % 4 == 0);
+    //assert(cutoffFreq >= 0);
+    //assert(cutoffFreq <= 0.5);
 
     work = new double[length];
     coeffs = new SAMPLETYPE[length];
@@ -163,12 +163,12 @@ void AAFilter::calculateCoeffs()
     }
 
     // ensure the sum of coefficients is larger than zero
-    assert(sum > 0);
+    //assert(sum > 0);
 
     // ensure we've really designed a lowpass filter...
-    assert(work[length/2] > 0);
-    assert(work[length/2 + 1] > -1e-6);
-    assert(work[length/2 - 1] > -1e-6);
+    //assert(work[length/2] > 0);
+    //assert(work[length/2 + 1] > -1e-6);
+    //assert(work[length/2 - 1] > -1e-6);
 
     // Calculate a scaling coefficient in such a way that the result can be
     // divided by 16384
@@ -181,7 +181,7 @@ void AAFilter::calculateCoeffs()
         // scale & round to nearest integer
         temp += (temp >= 0) ? 0.5 : -0.5;
         // ensure no overfloods
-        assert(temp >= -32768 && temp <= 32767);
+        //assert(temp >= -32768 && temp <= 32767);
 //#endif
         coeffs[i] = (SAMPLETYPE)temp;
     }
@@ -217,7 +217,7 @@ uint AAFilter::evaluate(FIFOSampleBuffer &dest, FIFOSampleBuffer &src) const
     uint result;
     int numChannels = src.getChannels();
 
-    assert(numChannels == dest.getChannels());
+    //assert(numChannels == dest.getChannels());
 
     numSrcSamples = src.numSamples();
     psrc = src.ptrBegin();

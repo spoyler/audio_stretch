@@ -140,8 +140,8 @@ protected:
     /// Sets output pipe.
     void setOutPipe(FIFOSamplePipe *pOutput)
     {
-        assert(output == NULL);
-        assert(pOutput != NULL);
+        //assert(output == NULL);
+        //assert(pOutput != NULL);
         output = pOutput;
     }
 
