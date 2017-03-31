@@ -601,7 +601,9 @@ void synth_full(struct mad_synth *synth, struct mad_frame *frame,
   register mad_fixed64hi_t hi;
   register mad_fixed64lo_t lo;
   mad_fixed_t raw_sample;
-  short int short_sample_buff[2][32]; 
+  
+#define ShortSamplesBufferSize 32
+  short int short_sample_buff[2][ShortSamplesBufferSize]; 
   unsigned short nSamples;
   
   
@@ -744,10 +746,10 @@ void synth_full(struct mad_synth *synth, struct mad_frame *frame,
 #if 1
     if(_stretch_Is_en())
     {
-      _stretch_putSamples(short_sample_buff[0], 32);
+      _stretch_putSamples(short_sample_buff[0], ShortSamplesBufferSize);
       do
       {
-        nSamples = _stretch_getSamples(short_sample_buff[0], 32);
+        nSamples = _stretch_getSamples(short_sample_buff[0], ShortSamplesBufferSize);
         render_sample_block(short_sample_buff[0], short_sample_buff[0], nSamples, nch);
       } while (nSamples != 0);  
     }

@@ -103,7 +103,7 @@
         </option>
         <option>
           <name>GenLowLevelInterface</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>GEndianModeBE</name>
@@ -8867,9 +8867,6 @@
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\RunParameters.cpp</name>
-        <excluded>
-          <configuration>Debug iRAM</configuration>
-        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\_stretch\SoundTouch.cpp</name>

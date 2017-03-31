@@ -10,8 +10,8 @@ LimitSize=0
 ByteLimit=50
 [JLinkDriver]
 WatchCond=_ 0
-Watch0=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
-Watch1=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
+Watch0=_ 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 4 0 0
+Watch1=_ 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 4 0 0
 ETM_Cookie=ID100_1378816444011111011001
 ETM_Reg_GeneralControl=0x00000C08
 ETM_Reg_TriggerEvent=0x0000406F
@@ -122,7 +122,7 @@ TraceShowTime=0
 TraceShowTimeFreq=1000000
 CStepIntDis=_ 0
 [DebugChecksum]
-Checksum=42981277
+Checksum=1264465647
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -165,6 +165,17 @@ Fmt8={W}1:dint	1	0
 Fmt9={W}1:resp->data_status	1	0
 Fmt10={W}1:resp.cmd_resp[1]	4	0
 Fmt11={W}1:resp.cmd_resp[1] & 0x000000FF	4	0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.1837.5" 0 0 1 "" 0 "" 0
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.3991.13" 0 0 1 "" 0 "" 0
+Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2058.5" 0 0 1 "" 0 "" 0
+Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2085.7" 0 0 1 "" 0 "" 0
+Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2090.8" 0 0 1 "" 0 "" 0
+Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2316.5" 0 0 1 "" 0 "" 0
+Bp6=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2409.13" 0 0 1 "" 0 "" 0
+Count=7
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -172,6 +183,10 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+A0=_ "D:\_designer\_tiflo_player\_codes\_audio_efsl_r\main.c" "D:\_designer\_tiflo_player\_codes\_audio_efsl_rw\main.c"
+Count=1
+SuppressDialog=0
 [Trace1]
 Enabled=0
 ShowSource=1
@@ -183,13 +198,3 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.1837.5" 0 0 1 "" 0 "" 0
-Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.3991.13" 0 0 1 "" 0 "" 0
-Count=2
-[Aliases]
-A0=_ "D:\_designer\_tiflo_player\_codes\_audio_efsl_r\main.c" "D:\_designer\_tiflo_player\_codes\_audio_efsl_rw\main.c"
-Count=1
-SuppressDialog=0
