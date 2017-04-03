@@ -10,6 +10,6 @@
 @REM 
 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\bin\armproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\bin\armjlink.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\bin\armbat.dll" --macro "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\config\LPC3000_iRAM.mac" --backend -B "--endian=little" "--cpu=ARM926EJ-S" "--fpu=None" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\CONFIG\debugger\NXP\iolpc3250.ddf" "--drv_verify_download" "--semihosting=none" "--device=LPC3250" "--jlink_device_select=1" "--drv_communication=USB0" "--jlink_speed=adaptive" "--drv_catch_exceptions=0x000" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\bin\armproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\bin\armjlink.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\bin\armbat.dll" --macro "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\config\LPC3000_iRAM.mac" --backend -B "--endian=little" "--cpu=ARM926EJ-S" "--fpu=VFP9-S" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0_2\arm\CONFIG\debugger\NXP\iolpc3250.ddf" "--drv_verify_download" "--semihosting=none" "--device=LPC3250" "--jlink_device_select=1" "--drv_communication=USB0" "--jlink_speed=adaptive" "--drv_catch_exceptions=0x000" 
 
 

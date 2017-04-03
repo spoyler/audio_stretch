@@ -23,7 +23,7 @@ static void setup(SoundTouch *pSoundTouch, const RunParameters *params)
 	pSoundTouch->setTempo(new_tempo);
 	pSoundTouch->setSampleRate(sample_rate);
 
-    pSoundTouch->setSetting(SETTING_USE_QUICKSEEK, params->quick);
+   // pSoundTouch->setSetting(SETTING_USE_QUICKSEEK, params->quick);
 }
 
 void _stretch_init(float newTempo)

@@ -118,6 +118,14 @@ CP_DIS_MASK DEFINE  0xFFFFEFFA
 ;				LDR r0, =__low_level_init
 ;				blx r0
 
+#ifdef __ARMVFP__
+		mov 		r0,#0x40000000
+		fmxr 		fpexc,r0
+		
+		mov			r0,#0x01000000
+		fmxr		fpscr,r0
+#endif		
+
 
 #ifdef BOOT_LEVEL_2
         mrs         r0,cpsr                             ; Original PSR value
