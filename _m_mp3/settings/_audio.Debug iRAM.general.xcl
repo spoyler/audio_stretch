@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armjlink2.dll" 
+
+"D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\Debug_iRAM\Exe\_audio.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armbat.dll" 
+
+--macro "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\config\LPC3000_iRAM.mac" 
+
+
+
+

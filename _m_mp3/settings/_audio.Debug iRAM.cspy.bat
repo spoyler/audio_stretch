@@ -19,6 +19,22 @@
 @REM 
 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armjlink.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armbat.dll" --macro "D:\ProjectsNikita\02_11_2016\_audio_efsl\config\LPC3000_iRAM.mac" --backend -B "--endian=little" "--cpu=ARM926EJ-S" "--fpu=None" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CONFIG\debugger\NXP\LPC3250.ddf" "--drv_verify_download" "--semihosting" "--device=LPC3250" "--jlink_device_select=1" "--drv_communication=USB0" "--jlink_speed=2000" "--drv_catch_exceptions=0x000" 
+@echo off 
 
+if not "%~1" == "" goto debugFile 
 
+@echo on 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\settings\_audio.Debug iRAM.general.xcl" --backend -f "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\settings\_audio.Debug iRAM.driver.xcl" 
+
+@echo off 
+goto end 
+
+:debugFile 
+
+@echo on 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\settings\_audio.Debug iRAM.general.xcl" "--debug_file=%~1" --backend -f "D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\settings\_audio.Debug iRAM.driver.xcl" 
+
+@echo off 
+:end

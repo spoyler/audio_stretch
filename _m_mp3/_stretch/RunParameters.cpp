@@ -157,7 +157,7 @@ void RunParameters::checkLimits()
 // Unknown switch parameter -- throws an exception with an error message
 void RunParameters::throwIllegalParamExp(const string &str) const
 {
-    string msg = "ERROR : Illegal parameter \"";
+	string msg = "ERROR : Illegal parameter \"";
     msg += str;
     msg += "\".\n\n";
     msg += usage;

@@ -87,7 +87,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>6.30.1.53141</state>
+          <state>6.21.1.52845</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -361,7 +361,7 @@
         </option>
         <option>
           <name>IccLang</name>
-          <state>2</state>
+          <state>0</state>
         </option>
         <option>
           <name>IccCDialect</name>
@@ -618,7 +618,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -671,27 +671,27 @@
         </option>
         <option>
           <name>IlinkMapFile</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogFile</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogInitialization</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogModule</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogSection</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogVeneer</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkIcfOverride</name>
@@ -731,7 +731,7 @@
         </option>
         <option>
           <name>IlinkUseExtraOptions</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkExtraOptions</name>
@@ -834,15 +834,15 @@
         </option>
         <option>
           <name>IlinkLogAutoLibSelect</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogRedirSymbols</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkLogUnusedFragments</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkCrcReverseByteOrder</name>
@@ -858,7 +858,7 @@
         </option>
         <option>
           <name>IlinkOptExceptionsAllow</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkOptExceptionsForce</name>
@@ -870,27 +870,15 @@
         </option>
         <option>
           <name>IlinkOptMergeDuplSections</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkOptUseVfe</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state>D:\Work\audio_stretch\from Nikita\_m_mp3\_m_mp3\Debug_iRAM\List\1.txt</state>
         </option>
       </data>
     </settings>
@@ -1524,7 +1512,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1785,18 +1773,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -2430,7 +2406,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -2691,18 +2667,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -3336,7 +3300,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -3353,7 +3317,7 @@
         </option>
         <option>
           <name>IlinkOutputFile</name>
-          <state>_audio.out</state>
+          <state>###Unitialized###</state>
         </option>
         <option>
           <name>IlinkDebugInfoEnable</name>
@@ -3597,18 +3561,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -4242,7 +4194,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -4503,18 +4455,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -5148,7 +5088,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -5409,18 +5349,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -6054,7 +5982,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -6315,18 +6243,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -6960,7 +6876,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>14</version>
+        <version>13</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -6977,7 +6893,7 @@
         </option>
         <option>
           <name>IlinkOutputFile</name>
-          <state>_audio.out</state>
+          <state>###Unitialized###</state>
         </option>
         <option>
           <name>IlinkDebugInfoEnable</name>
@@ -7041,7 +6957,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$TOOLKIT_DIR$\CONFIG\generic.icf</state>
+          <state>lnk0t.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -7101,7 +7017,7 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state>__iar_program_start</state>
+          <state></state>
         </option>
         <option>
           <name>DoFill</name>
@@ -7221,18 +7137,6 @@
         <option>
           <name>IlinkOptForceVfe</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackAnalysisEnable</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IlinkStackControlFile</name>
-          <state></state>
-        </option>
-        <option>
-          <name>IlinkStackCallGraphFile</name>
-          <state></state>
         </option>
       </data>
     </settings>
@@ -8884,6 +8788,254 @@
         <name>$PROJ_DIR$\_stretch\WavFile.cpp</name>
       </file>
     </group>
+    <configuration>
+      <name>Debug iRAM</name>
+      <settings>
+        <name>ICCARM</name>
+        <data>
+          <version>28</version>
+          <wantNonLocal>0</wantNonLocal>
+          <debug>1</debug>
+          <option>
+            <name>CCDefines</name>
+            <state>__CC_ARM</state>
+            <state>SIZEOF_INT=4</state>
+            <state>SIZE_LONG=4</state>
+            <state>SIZE_LONG_LONG=8</state>
+            <state>FPM_DEFAULT</state>
+            <state>__SOFTFP__</state>
+          </option>
+          <option>
+            <name>CCPreprocFile</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCPreprocComments</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCPreprocLine</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCListCFile</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>CCListCMnemonics</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCListCMessages</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCListAssFile</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCListAssSource</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCEnableRemarks</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCDiagSuppress</name>
+            <state></state>
+          </option>
+          <option>
+            <name>CCDiagRemark</name>
+            <state></state>
+          </option>
+          <option>
+            <name>CCDiagWarning</name>
+            <state></state>
+          </option>
+          <option>
+            <name>CCDiagError</name>
+            <state></state>
+          </option>
+          <option>
+            <name>CCObjPrefix</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>CCAllowList</name>
+            <version>1</version>
+            <state>1111111</state>
+          </option>
+          <option>
+            <name>CCDebugInfo</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IEndianMode</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IProcessor</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IExtraOptionsCheck</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IExtraOptions</name>
+            <state></state>
+          </option>
+          <option>
+            <name>CCLangConformance</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCSignedPlainChar</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>CCRequirePrototypes</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCMultibyteSupport</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCDiagWarnAreErr</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCCompilerRuntimeInfo</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IFpuProcessor</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>OutputFile</name>
+            <state>$FILE_BNAME$.o</state>
+          </option>
+          <option>
+            <name>CCLibConfigHeader</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>PreInclude</name>
+            <state></state>
+          </option>
+          <option>
+            <name>CompilerMisraOverride</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCIncludePath2</name>
+            <state>$PROJ_DIR$\</state>
+            <state>$PROJ_DIR$\board\</state>
+            <state>$PROJ_DIR$\..\_bsp\include\</state>
+            <state>$PROJ_DIR$\..\lpc\include\</state>
+            <state>$PROJ_DIR$\board\include</state>
+            <state>$PROJ_DIR$\efsl\inc</state>
+            <state>$PROJ_DIR$\efsl\conf</state>
+            <state>$PROJ_DIR$\_stretch\</state>
+            <state>$PROJ_DIR$\libmad\</state>
+          </option>
+          <option>
+            <name>CCStdIncCheck</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCCodeSection</name>
+            <state>.text</state>
+          </option>
+          <option>
+            <name>IInterwork2</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IProcessorMode2</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCOptLevel</name>
+            <state>3</state>
+          </option>
+          <option>
+            <name>CCOptStrategy</name>
+            <version>0</version>
+            <state>2</state>
+          </option>
+          <option>
+            <name>CCOptLevelSlave</name>
+            <state>3</state>
+          </option>
+          <option>
+            <name>CompilerMisraRules98</name>
+            <version>0</version>
+            <state>1000111110110101101110011100111111101110011011000101110111101101100111111111111100110011111001110111001111111111111111111111111</state>
+          </option>
+          <option>
+            <name>CompilerMisraRules04</name>
+            <version>0</version>
+            <state>111101110010111111111000110111111111111111111111111110010111101111010101111111111111111111111111101111111011111001111011111011111111111111111</state>
+          </option>
+          <option>
+            <name>CCPosIndRopi</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCPosIndRwpi</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>CCPosIndNoDynInit</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IccLang</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IccCDialect</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IccAllowVLA</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IccCppDialect</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IccExceptions</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IccRTTI</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IccStaticDestr</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IccCppInlineSemantics</name>
+            <state>0</state>
+          </option>
+          <option>
+            <name>IccCmsis</name>
+            <state>1</state>
+          </option>
+          <option>
+            <name>IccFloatSemantics</name>
+            <state>0</state>
+          </option>
+        </data>
+      </settings>
+    </configuration>
   </group>
   <group>
     <name>Startup</name>

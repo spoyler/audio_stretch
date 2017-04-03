@@ -10,9 +10,9 @@ LimitSize=0
 ByteLimit=50
 [JLinkDriver]
 WatchCond=_ 0
-Watch0=_ 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 4 0 0
-Watch1=_ 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 "0x00000000" 0 4 0 0
-ETM_Cookie=ID100_1378816444011111011001
+Watch0=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
+Watch1=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
+ETM_Cookie=ID100_1378816444011100011001
 ETM_Reg_GeneralControl=0x00000C08
 ETM_Reg_TriggerEvent=0x0000406F
 ETM_Reg_MemoryMapDecodeControl=0x00000000
@@ -117,12 +117,12 @@ ETM_Reg_ContextIDValue2=0x00000000
 ETM_Reg_ContextIDValue3=0x00000000
 ETM_Reg_ContextIDMask=0x00000000
 ETM_Reg_SynchronizationFrequency=0x00000400
-TraceBufferSize=0x00000010
+TraceBufferSize=0x00000000
 TraceShowTime=0
 TraceShowTimeFreq=1000000
 CStepIntDis=_ 0
 [DebugChecksum]
-Checksum=1264465647
+Checksum=61192938
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -130,6 +130,8 @@ StopOnThrow=_ 0
 ShowArgs=0
 [Disassembly]
 MixedMode=1
+[CallStackStripe]
+ShowTiming=1
 [InterruptLog]
 LogEnabled=0
 SumEnabled=0
@@ -146,6 +148,9 @@ UseAuto=0
 TypeViolation=1
 UnspecRange=1
 ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
 [struct_types]
 Fmt0=PartitionField-numSectors	3	0
 Fmt1=SD_CMDRESP_T-cmd_status	4	0
@@ -165,17 +170,6 @@ Fmt8={W}1:dint	1	0
 Fmt9={W}1:resp->data_status	1	0
 Fmt10={W}1:resp.cmd_resp[1]	4	0
 Fmt11={W}1:resp.cmd_resp[1] & 0x000000FF	4	0
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.1837.5" 0 0 1 "" 0 "" 0
-Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.3991.13" 0 0 1 "" 0 "" 0
-Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2058.5" 0 0 1 "" 0 "" 0
-Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2085.7" 0 0 1 "" 0 "" 0
-Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2090.8" 0 0 1 "" 0 "" 0
-Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2316.5" 0 0 1 "" 0 "" 0
-Bp6=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.2409.13" 0 0 1 "" 0 "" 0
-Count=7
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -183,18 +177,18 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Aliases]
-A0=_ "D:\_designer\_tiflo_player\_codes\_audio_efsl_r\main.c" "D:\_designer\_tiflo_player\_codes\_audio_efsl_rw\main.c"
-Count=1
-SuppressDialog=0
-[Trace1]
-Enabled=0
-ShowSource=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
 Enabled=0
-Mode=1
+Mode=0
 Graph=0
 Symbiont=0
-Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "D:\_designer\_tiflo_player\_codes\_audio_efsl_r\main.c" "D:\_designer\_tiflo_player\_codes\_audio_efsl_rw\main.c"
+Count=1
+SuppressDialog=0
