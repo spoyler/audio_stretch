@@ -581,7 +581,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>_mp3.bin</state>
+          <state>_audio.bin</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -589,7 +589,7 @@
         </option>
         <option>
           <name>OOCObjCopyEnable</name>
-          <state>1</state>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -671,7 +671,7 @@
         </option>
         <option>
           <name>IlinkMapFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogFile</name>
@@ -9007,15 +9007,15 @@
           </option>
           <option>
             <name>IccCppDialect</name>
-            <state>1</state>
+            <state>2</state>
           </option>
           <option>
             <name>IccExceptions</name>
-            <state>1</state>
+            <state>0</state>
           </option>
           <option>
             <name>IccRTTI</name>
-            <state>1</state>
+            <state>0</state>
           </option>
           <option>
             <name>IccStaticDestr</name>
@@ -9044,6 +9044,9 @@
     </file>
     <file>
       <name>$PROJ_DIR$\board\iram_init.c</name>
+      <excluded>
+        <configuration>Debug iRAM</configuration>
+      </excluded>
     </file>
   </group>
   <file>

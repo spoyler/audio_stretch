@@ -51,26 +51,28 @@ readwrite object sse_optimized.o,
 readwrite object TDStretch.o,
 readwrite object WavFile.o
 };
-/*
+
+
 define block USER_CODE with fixed order
 {
-readonly section AAFilter.o,
-readonly section BPMDetect.o,
-readonly section FIFOSampleBuffer.o,
-readonly section FIRFilter.o,
-readonly section InterpolateCubic.o,
-readonly section InterpolateLinear.o,
-readonly section InterpolateShannon.o,
-readonly section mmx_optimized.o,
-readonly section PeakFinder.o,
-readonly section RateTransposer.o,
-readonly section RunParameters.o,
-readonly section SoundTouch.o,
-readonly section sse_optimized.o,
-readonly section TDStretch.o,
-readonly section WavFile.o
+readonly object AAFilter.o,
+readonly object BPMDetect.o,
+readonly object FIFOSampleBuffer.o,
+readonly object FIRFilter.o,
+readonly object InterpolateCubic.o,
+readonly object InterpolateLinear.o,
+readonly object InterpolateShannon.o,
+readonly object mmx_optimized.o,
+readonly object PeakFinder.o,
+readonly object RateTransposer.o,
+readonly object RunParameters.o,
+readonly object SoundTouch.o,
+readonly object sse_optimized.o,
+readonly object TDStretch.o,
+readonly object WavFile.o
 };
-*/
+
+
 initialize by copy with packing = zeros { readwrite};
 
 
@@ -82,11 +84,12 @@ place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };
 
 place in RAM_region   { readonly };
 
-place in SDRAM_region   {readwrite object lpc3250_mmc.o, readwrite object lpc_io_stereo.o,
-			block USER_DATA, block HEAP};
 place in RAM_region   { readwrite,
                         block CSTACK, block SVC_STACK, block IRQ_STACK, block FIQ_STACK,
                         block UND_STACK, block ABT_STACK, 
                         readwrite data section MMU_TT};
 
+place in SDRAM_region   {readwrite object lpc3250_mmc.o, readwrite object lpc_io_stereo.o,
+			block USER_CODE, block USER_DATA};
 
+place in SDRAM_region   {block HEAP};

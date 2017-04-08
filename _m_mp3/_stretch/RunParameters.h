@@ -47,11 +47,11 @@
 class RunParameters
 {
 private:
-    void throwIllegalParamExp(const string &str) const;
+    void throwIllegalParamExp(const std::string &str) const;
     void throwLicense() const;
-    void parseSwitchParam(const string &str);
+    void parseSwitchParam(const std::string &str);
     void checkLimits();
-    float parseSwitchValue(const string &str) const;
+    float parseSwitchValue(const std::string &str) const;
 
 public:
     char  *inFileName;

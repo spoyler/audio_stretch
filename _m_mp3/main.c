@@ -2140,7 +2140,7 @@ char device1;
 //инит в boot0 
 #if 1  
  
-  sdr_sdram_setup(AHB_CLK);
+	//sdr_sdram_setup(AHB_CLK);
 #endif  
  
   _modes |= _SP;

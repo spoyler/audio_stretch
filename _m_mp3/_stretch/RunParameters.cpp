@@ -155,9 +155,9 @@ void RunParameters::checkLimits()
 
 
 // Unknown switch parameter -- throws an exception with an error message
-void RunParameters::throwIllegalParamExp(const string &str) const
+void RunParameters::throwIllegalParamExp(const std::string &str) const
 {
-	string msg = "ERROR : Illegal parameter \"";
+	std::string msg = "ERROR : Illegal parameter \"";
     msg += str;
     msg += "\".\n\n";
     msg += usage;
@@ -172,7 +172,7 @@ void RunParameters::throwLicense() const
 }
 
 
-float RunParameters::parseSwitchValue(const string &str) const
+float RunParameters::parseSwitchValue(const std::string &str) const
 {
     int pos;
 
@@ -191,7 +191,7 @@ float RunParameters::parseSwitchValue(const string &str) const
 // Interprets a single switch parameter string of format "-switch=xx"
 // Valid switches are "-tempo=xx", "-pitch=xx" and "-rate=xx". Stores
 // switch values into 'params' structure.
-void RunParameters::parseSwitchParam(const string &str)
+void RunParameters::parseSwitchParam(const std::string &str)
 {
     int upS;
 

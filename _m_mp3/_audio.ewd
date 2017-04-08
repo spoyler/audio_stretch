@@ -37,7 +37,7 @@
         </option>
         <option>
           <name>MacFile</name>
-          <state>$PROJ_DIR$\config\LPC3000_iRAM.mac</state>
+          <state>$PROJ_DIR$\config\LPC3000_xRAM.mac</state>
         </option>
         <option>
           <name>MemOverride</name>
